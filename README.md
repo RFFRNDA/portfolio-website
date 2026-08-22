@@ -18,7 +18,7 @@ npm run build
 
 ## Status
 - [x] Project setup & folder structure
-- [ ] Data layer (types, data/*.ts, i18n)
+- [X] Data layer (types, data/*.ts, i18n)
 - [ ] LanguageContext
 - [ ] Navbar & Footer
 - [ ] Home page
