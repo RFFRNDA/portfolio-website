@@ -20,7 +20,7 @@ npm run build
 - [x] Project setup & folder structure
 - [X] Data layer (types, data/*.ts, i18n)
 - [X] LanguageContext
-- [ ] Navbar & Footer
+- [X] Navbar & Footer
 - [ ] Home page
 - [ ] About page
 - [ ] Project page

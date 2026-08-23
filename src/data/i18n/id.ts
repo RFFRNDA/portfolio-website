@@ -46,5 +46,6 @@ export const id: UIDictionary = {
     quickLinks: "Tautan Cepat",
     contact: "Kontak",
     location: "Lokasi",
+    social: "Social",
   },
 };

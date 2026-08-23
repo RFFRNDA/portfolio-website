@@ -44,6 +44,7 @@ export const en = {
     quickLinks: "Quick Links",
     contact: "Contact",
     location: "Location",
+    social: "Social",
   },
 };
 
