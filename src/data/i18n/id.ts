@@ -7,6 +7,7 @@ export const id: UIDictionary = {
     project: "Project",
   },
   hero: {
+    tagline: "Mengubah masalah kompleks jadi sistem yang rapi dan berfungsi.",
     badgeOpenToWork: "Open to Work",
     ctaViewProjects: "Lihat Project Saya",
     ctaDownloadCV: "Download CV",

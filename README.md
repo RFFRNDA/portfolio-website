@@ -1,5 +1,4 @@
 # Portfolio Rafif
-
 Personal portfolio website — React 18 + TypeScript + Vite + Tailwind CSS + React Router.
 See `CLAUDE.md`, `PRD.md`, `ARCHITECTURE.md`, `DESIGN.md` in the project root for spec & working principles.
 
@@ -11,7 +10,6 @@ npm run dev
 ```
 
 ## Build
-
 ```bash
 npm run build
 ```

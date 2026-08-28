@@ -5,6 +5,7 @@ export const en = {
     project: "Project",
   },
   hero: {
+    tagline: "I turn complex problems into clean, working systems.",
     badgeOpenToWork: "Open to Work",
     ctaViewProjects: "View My Project",
     ctaDownloadCV: "Download CV",
