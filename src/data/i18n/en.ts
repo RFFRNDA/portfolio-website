@@ -5,14 +5,20 @@ export const en = {
     project: "Project",
   },
   hero: {
-    tagline: "I turn complex problems into clean, working systems.",
+    tagline: "I craft digital solutions that blend analysis, design, and development to turn complex problems into systems people can rely on.",
     badgeOpenToWork: "Open to Work",
     ctaViewProjects: "View My Project",
-    ctaDownloadCV: "Download CV",
   },
   aboutPreview: {
     title: "About Me",
+    tagline1: "Designing Solution.",
+    tagline2: "From Idea To Impact.",
+    description: "Informatics graduate passionate about turning ideas and complex requirements into practical digital solutions that create impact. Combining analytical thinking, data insights, user-centered design, and web development.",
     ctaMore: "More About Me",
+    name: "Name",
+    location: "Location",
+    availabilityTitle: "Availability",
+    availabilityDescription: "Open to Work",
   },
   whatICanDo: {
     title: "What I Can Do",

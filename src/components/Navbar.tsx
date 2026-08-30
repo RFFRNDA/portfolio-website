@@ -2,7 +2,6 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
-import Signature from "./Signature";
 
 // Each nav item's key must be a valid t() key from UIDictionary.
 const NAV_ITEMS = [
@@ -16,21 +15,22 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const linkClass = ({ isActive }: { isActive: boolean }) =>
-    `transition-colors ${
+     `border-b-2 pb-1 transition-colors ${
       isActive
-        ? "text-accent-orange"
-        : "text-text-on-dark hover:text-accent-orange"
+        ? "border-accent-orange text-accent-orange"
+        : "border-transparent text-text-on-dark hover:border-accent-orange hover:text-accent-orange"
     }`;
 
   return (
     <header className="sticky top-0 z-sticky-nav border-b border-text-on-dark-secondary/30 bg-dark-base">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <NavLink to="/" onClick={() => setIsOpen(false)}>
-          <Signature className="h-8" invert />
+        <NavLink to="/">
+          <span className="pointer-events-none absolute"></span>
+          <img src="/images/rf-logo.png" alt="Rafif Logo" className="block h-auto w-16 hover:scale-105 active:scale-95"/>
         </NavLink>
 
         {/* Desktop nav links — hidden below 768px, replaced by the mobile panel */}
-        <ul className="hidden items-center gap-8 font-body text-sm md:flex">
+        <ul className="hidden items-center gap-8 font-body text-md md:flex">
           {NAV_ITEMS.map((item) => (
             <li key={item.to}>
               <NavLink to={item.to} className={linkClass} end={item.to === "/"}>
@@ -62,7 +62,7 @@ function Navbar() {
 
       {/* Mobile nav panel — only rendered when hamburger is open */}
       {isOpen && (
-        <ul className="flex flex-col gap-4 border-t border-text-on-dark-secondary/30 px-6 py-4 font-body text-sm md:hidden">
+        <ul className="text-end flex flex-col gap-4 border-t border-text-on-dark-secondary/30 px-6 py-4 font-body text-sm md:hidden">
           {NAV_ITEMS.map((item) => (
             <li key={item.to}>
               <NavLink

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, MessageCircle, MapPin } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
-import Signature from "./Signature";
 
 // lucide-react dropped brand/logo icons (Github, Linkedin, Instagram) from
 // its package, so these are hand-written to match lucide's own stroke style
@@ -83,7 +82,9 @@ function Footer() {
 				
 				{/* Column 1: Signature + tagline */}
 				<div className="col-span-2 md:col-span-1">
-					<Signature className="h-9" invert />
+					<Link to="/">
+						<img src="/images/rf-logo.png" alt="Rafif Logo" className="block h-auto w-16"/>
+					</Link>
 					<p className="mt-2 text-sm text-text-on-dark-secondary">
 						Informatics Graduate — Web Developer & System Analyst
 					</p>

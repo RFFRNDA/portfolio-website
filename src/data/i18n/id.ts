@@ -3,18 +3,24 @@ import type { UIDictionary } from "./en";
 export const id: UIDictionary = {
   nav: {
     home: "Beranda",
-    about: "Tentang",
-    project: "Project",
+    about: "Profil",
+    project: "Proyek",
   },
   hero: {
-    tagline: "Mengubah masalah kompleks jadi sistem yang rapi dan berfungsi.",
+    tagline: "Saya merancang solusi digital yang memadukan analisis, desain, dan pengembangan untuk mengubah masalah kompleks menjadi sistem yang bisa diandalkan.",
     badgeOpenToWork: "Open to Work",
     ctaViewProjects: "Lihat Project Saya",
-    ctaDownloadCV: "Download CV",
   },
   aboutPreview: {
     title: "Tentang Saya",
+    tagline1: "Merancang Solusi.",
+    tagline2: "Mewujudkan Ide.",
+    description: "Lulusan Informatika yang bersemangat mengubah ide dan kebutuhan yang kompleks menjadi solusi digital praktis yang berdampak. Memadukan pemikiran analitis, insight berbasis data, desain yang berorientasi pada pengguna, dan pengembangan web.",
     ctaMore: "Selengkapnya Tentang Saya",
+    name: "Nama",
+    location: "Lokasi",
+    availabilityTitle: "Ketersediaan",
+    availabilityDescription: "Terbuka untuk Peluang Baru",
   },
   whatICanDo: {
     title: "Apa yang Bisa Saya Kerjakan",
