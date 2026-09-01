@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, MessageCircle, MapPin } from "lucide-react";
+import { Mail, MessageCircle, MapPin, Clock3 } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 
 // lucide-react dropped brand/logo icons (Github, Linkedin, Instagram) from
@@ -59,7 +59,6 @@ function InstagramIcon({ size }: IconProps) {
 const EMAIL = "rafif.fernanda.id@gmail.com";
 const WHATSAPP_DISPLAY = "0821-4328-9622";
 const WHATSAPP_LINK = "https://wa.me/6282143289622";
-const LOCATION = "Probolinggo, Jawa Timur";
 
 const SOCIALS = [
   {name:"GitHub", href:"https://github.com/RFFRNDA", Icon: GithubIcon },
@@ -78,20 +77,25 @@ function Footer() {
 	const year = new Date().getFullYear();
   	return (
 		<footer className="border-t border-text-on-dark-secondary/30 bg-dark-base font-body text-text-on-dark">
-			<div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-6 py-12 md:grid-cols-4">
+			<div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-6 py-4 md:grid-cols-3 md:gap-6">
 				
-				{/* Column 1: Signature + tagline */}
-				<div className="col-span-2 md:col-span-1">
+				<div className="cflex flex-col items-center md:items-start">
 					<Link to="/">
 						<img src="/images/rf-logo.png" alt="Rafif Logo" className="block h-auto w-16"/>
 					</Link>
-					<p className="mt-2 text-sm text-text-on-dark-secondary">
-						Informatics Graduate — Web Developer & System Analyst
+					<p className="mt-2 text-sm text-text-on-dark-secondary md:text-left">
+						{t("hero.tagline")}
 					</p>
+					<div className="mt-2 flex gap-4">
+						{SOCIALS.map(({ name, href, Icon }) => (
+							<a key={name} href={href} target="_blank" rel="noopener noreferrer" aria-label={name} className="text-text-on-dark-secondary transition-colors hover:text-accent-orange">
+								<Icon size={20} />
+							</a>
+						))}
+					</div>
 				</div>
 
-				{/* Column 2: Quick Links */}
-				<div>
+				<div className="flex flex-col md:items-center">
 					<h3 className="mb-3 font-heading text-sm font-semibold">
 						{t("footer.quickLinks")}
 					</h3>
@@ -106,55 +110,32 @@ function Footer() {
 					</ul>
 				</div>
 
-				{/* Column 3: Contact */}
-				<div>
+				<div className="flex flex-col md:items-start">
 					<h3 className="mb-3 font-heading text-sm font-semibold">
 						{t("footer.contact")}
 					</h3>
 					<ul className="space-y-2 text-sm text-text-on-dark-secondary">
 						<li className="flex items-center gap-2">
 							<Mail size={16} />
-							<a href={`mailto:${EMAIL}`} className="hover:text-accent-orange">
+							<a href={`mailto:${EMAIL}`} className="break-all hover:text-accent-orange">
 								{EMAIL}
 							</a>
 						</li>
 						<li className="flex items-center gap-2">
 							<MessageCircle size={16} />  
-							<a  
-								href={WHATSAPP_LINK}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="hover:text-accent-orange"						
-							>					
+							<a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="hover:text-accent-orange">					
 								{WHATSAPP_DISPLAY}
 							</a>          
 						</li>
 						<li className="flex items-center gap-2">
-							<MapPin size={16} />
-							<span>{LOCATION}</span>
+							<MapPin size={18} />
+							{t("aboutPreview.locationValue")} 
+						</li>
+						<li className="flex items-center gap-2">
+							<Clock3 size={18} />
+							{t("aboutPreview.availabilityDescription")}
 						</li>
 					</ul>
-				</div>
-
-				{/* Column 4: Social media */}
-				<div>
-					<h3 className="mb-3 font-heading text-sm font-semibold">
-						{t("footer.social")}
-					</h3>
-					<div className="flex gap-4">
-						{SOCIALS.map(({ name, href, Icon }) => (
-							<a  
-								key={name}
-								href={href}
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label={name}
-								className="text-text-on-dark-secondary transition-colors hover:text-accent-orange"
-							>
-							<Icon size={20} />
-							</a>
-						))}
-					</div>
 				</div>
 			</div>
 

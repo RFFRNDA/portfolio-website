@@ -17,6 +17,7 @@ export const en = {
     ctaMore: "More About Me",
     name: "Name",
     location: "Location",
+    locationValue: "Probolinggo, East Java, Indonesia",
     availabilityTitle: "Availability",
     availabilityDescription: "Open to Work",
   },
@@ -51,7 +52,6 @@ export const en = {
     quickLinks: "Quick Links",
     contact: "Contact",
     location: "Location",
-    social: "Social",
   },
 };
 

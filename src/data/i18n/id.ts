@@ -19,6 +19,7 @@ export const id: UIDictionary = {
     ctaMore: "Selengkapnya Tentang Saya",
     name: "Nama",
     location: "Lokasi",
+    locationValue: "Probolinggo, Jawa Timur, Indonesia",
     availabilityTitle: "Ketersediaan",
     availabilityDescription: "Terbuka untuk Peluang Baru",
   },
@@ -53,6 +54,5 @@ export const id: UIDictionary = {
     quickLinks: "Tautan Cepat",
     contact: "Kontak",
     location: "Lokasi",
-    social: "Social",
   },
 };

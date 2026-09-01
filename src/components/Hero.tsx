@@ -21,7 +21,7 @@ export default function Hero() {
             </p>
 
             <div className="mt-4 flex flex-nowrap gap-2 sm:gap-4 sm:mt-8">
-              <a href="/projects" className="group inline-flex items-center gap-2 whitespace-nowrap rounded-lg bg-accent-orange px-4 py-2.5 text-sm font-medium text-text-on-dark transition-all hover:bg-[#a84310] hover:scale-105 active:scale-95 sm:px-6 sm:py-3 sm:text-base">
+              <a href="/projects" className="inline-flex items-center gap-2 whitespace-nowrap rounded-lg bg-accent-orange px-4 py-2.5 text-sm font-medium text-text-on-dark transition-all hover:bg-[#a84310] hover:scale-105 active:scale-95 sm:px-6 sm:py-3 sm:text-base">
                 {t("hero.ctaViewProjects")}
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
@@ -34,7 +34,7 @@ export default function Hero() {
 
           {/*Right Column*/}
           <div className="relative flex items-center justify-center">
-            <div className="absolute z-0 h-64 w-64 rounded-full bg-[#c85314] opacity-20 blur-3xl md:h-80 md:w-80" aria-hidden="true"></div>
+            <div className="absolute z-0 h-64 w-64 rounded-full bg-accent-orange opacity-20 blur-3xl md:h-80 md:w-80" aria-hidden="true"></div>
             <div className="relative z-10">
               <img src="/images/profile.webp" alt="Rafif Image" className="block h-auto w-full max-w-[320px] md:max-w-[360px]"/>
             </div>

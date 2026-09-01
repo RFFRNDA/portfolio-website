@@ -5,7 +5,7 @@ export default function AboutMePreview() {
   const { t } = useLanguage();
 
   return (
-    <section className="bg-[#e0e3d9] py-4">
+    <section className="bg-warm-base py-4">
       <div className="container mx-auto max-w-6xl px-6">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {/* Kolom Kiri */}
@@ -13,13 +13,13 @@ export default function AboutMePreview() {
             <p className= "font-bold text-[#c85314]">
               {t("aboutPreview.title")}
             </p>
-            <h2 className="font-heading text-3xl font-bold text-[#0c1621] md:text-4xl">
+            <h2 className="font-heading text-3xl font-bold text-dark-base md:text-4xl">
               {t("aboutPreview.tagline1")}  
             </h2>
-            <h2 className="font-heading text-3xl font-bold text-[#0c1621] md:text-4xl">
+            <h2 className="font-heading text-3xl font-bold text-dark-base md:text-4xl">
               {t("aboutPreview.tagline2")}  
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-[#445569] text-balance">
+            <p className="mt-4 text-base leading-relaxed text-text-on-warm-secondary text-balance">
               {t("aboutPreview.description")}
             </p>
             <a href="/about" className="mt-6 inline-flex items-center gap-2 whitespace-nowrap bg-dark-base rounded-lg text-sm font-medium text-text-on-dark transition-all hover:bg-dark-base/75 hover:scale-105 active:scale-95 px-6 py-2.5 sm:px-6 sm:py-3 sm:text-base">
@@ -29,7 +29,7 @@ export default function AboutMePreview() {
           </div>
 
           {/* Kolom Kanan - Bio & Signature */}
-          <div className="flex items-center justify-center border-l-2 border-[#c85314] pl-6 md:pl-8">
+          <div className="flex items-center justify-center border-l-2 border-accent-orange pl-6 md:pl-8">
             <div className="grid grid-cols-1 items-center gap-8 min-[1105px]:grid-cols-2">
               {/* Information */}
               <div className="space-y-4">
@@ -54,7 +54,7 @@ export default function AboutMePreview() {
                       {t("aboutPreview.location")}
                     </p>
                     <p className="text-sm font-bold text-dark-base">
-                      Probolinggo, Indonesia
+                      {t("aboutPreview.locationValue")}                
                     </p>
                   </div>
                 </div>

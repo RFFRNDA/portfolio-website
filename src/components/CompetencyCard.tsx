@@ -14,13 +14,13 @@ export default function CompetencyCard() {
   const { t, language } = useLanguage();
 
   return (
-    <section className="bg-[#0c1621] py-16 md:py-24">
+    <section className="bg-dark-base py-6">
       <div className="container mx-auto max-w-6xl px-6">
-        <h2 className="mb-12 text-center font-heading text-3xl font-bold text-[#f3f4f0] md:text-4xl">
+        <h2 className="text-center font-heading text-3xl font-bold text-text-on-dark md:text-4xl">
           {t("whatICanDo.title")}
         </h2>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {competencies.map((item) => {
             const IconComponent = iconMap[item.id] || Globe;
             return (

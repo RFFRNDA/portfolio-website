@@ -25,16 +25,16 @@ export default function ExperiencePreview() {
   const recentExperiences = experiences.slice(0, 2);
 
   return (
-    <section className="bg-[#0c1621] py-16 md:py-24">
+    <section className="bg-dark-base py-4 mb-2">
       <div className="container mx-auto max-w-6xl px-6">
-        <h2 className="mb-10 text-center font-heading text-3xl font-bold text-[#f3f4f0] md:text-4xl">
+        <h2 className="mb-8 text-center font-heading text-3xl font-bold text-text-on-dark md:text-4xl">
           {t("experience.title")}
         </h2>
 
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
           {/* Kolom Kiri - Experience Timeline Compact */}
           <div>
-            <h3 className="mb-4 text-xl font-semibold text-[#f3f4f0]">
+            <h3 className="mb-4 text-xl font-semibold text-text-on-dark">
               Experience
             </h3>
             <div className="space-y-6">
@@ -44,17 +44,17 @@ export default function ExperiencePreview() {
                   <div key={exp.id} className="relative pl-6">
                     <div className="absolute left-0 top-1.5 h-3 w-3 rounded-full border-2 border-[#c85314] bg-[#0c1621]"></div>
                     <div className="flex flex-wrap items-baseline gap-2">
-                      <span className="text-sm font-medium text-[#57626f]">
+                      <span className="text-sm font-medium text-text-on-dark-secondary">
                         {exp.startDate} - {exp.endDate}
                       </span>
-                      <span className="text-base font-bold text-[#f3f4f0]">
+                      <span className="text-base font-bold text-text-on-dark">
                         {exp.role}
                       </span>
-                      <span className="text-sm text-[#57626f]">
+                      <span className="text-sm text-text-on-dark-secondary">
                         @ {exp.company}
                       </span>
                     </div>
-                    <p className="mt-1 text-sm text-[#57626f] line-clamp-2">
+                    <p className="mt-1 text-sm text-text-on-dark-secondary line-clamp-2">
                       {description}
                     </p>
                   </div>
@@ -65,7 +65,7 @@ export default function ExperiencePreview() {
             <div className="mt-8">
               <a
                 href="/about"
-                className="inline-block rounded-lg border border-[#c85314] px-6 py-2 text-sm font-medium text-[#f3f4f0] transition hover:bg-[#c85314]"
+                className="inline-block rounded-lg border border-accent-orange px-6 py-2 text-sm font-medium text-text-on-dark transition hover:bg-accent-orange"
               >
                 {t("experience.ctaViewFullCV")}
               </a>
@@ -73,8 +73,8 @@ export default function ExperiencePreview() {
           </div>
 
           {/* Kolom Kanan - Technical Focus */}
-          <div>
-            <h3 className="mb-4 text-xl font-semibold text-[#f3f4f0]">
+          <div className="flex flex-col justify-center">
+            <h3 className="mb-4 text-xl font-semibold text-text-on-dark">
               Technical Focus
             </h3>
             <div className="space-y-3">
