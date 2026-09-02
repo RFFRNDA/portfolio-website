@@ -1,8 +1,18 @@
+import AboutHeader from "../components/AboutHeader";
+import Biography from "../components/Biography";
+import ExperienceTimeline from "../components/ExperienceTimeline";
+import Skills from "../components/Skills";
+import Certifications from "../components/Certifications";
+
 function About() {
   return (
-    <div>
-      <h1>About page — TODO</h1>
-    </div>
+    <main>
+      <AboutHeader />
+      <Biography />
+      <ExperienceTimeline />
+      <Skills />
+      <Certifications />
+    </main>
   );
 }
 

@@ -36,6 +36,7 @@ export const id: UIDictionary = {
   },
   aboutPage: {
     biography: "Biografi",
+    biographyText: "Saya lulusan Informatika dari Universitas Jember (IPK 3.75/4.00), dengan latar belakang di pengembangan sistem informasi berbasis web, penyiapan dan analisis dataset untuk machine learning, hingga koordinasi tim pengembangan lintas fungsi.\n\nPerjalanan saya dimulai dari frontend development untuk sistem informasi fakultas, memimpin tim beranggotakan lima developer melalui siklus pengembangan perangkat lunak penuh, hingga menjalankan riset analisis data dan computer vision secara mandiri. Satu hal yang konsisten di setiap prosesnya: mengubah masalah yang kompleks dan berantakan menjadi sesuatu yang terstruktur, mudah dipakai, dan bisa diandalkan.\n\nSaya memperhatikan detail — data yang bersih, requirement yang jelas, antarmuka yang benar-benar bisa dipakai orang — dan selalu mencari sistem berikutnya yang layak untuk ditingkatkan.",
     experienceTimeline: "Linimasa Pengalaman",
     skills: "Keahlian",
     certifications: "Sertifikasi",

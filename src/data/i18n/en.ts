@@ -34,6 +34,7 @@ export const en = {
   },
   aboutPage: {
     biography: "Biography",
+    biographyText: "I'm an Informatics graduate from Jember University (GPA 3.75/4.00), with a background spanning web-based information systems, dataset preparation and analysis for machine learning, and coordinating cross-functional development teams.\n\nMy work has taken me from frontend development on a university information system, to leading a five-person team through a full software development lifecycle, to running independent data analysis and computer vision research. The constant across all of it: taking a messy, complex problem and turning it into something structured, usable, and reliable.\n\nI care about the details — clean data, clear requirements, interfaces people can actually use — and I'm always looking for the next system worth improving.",
     experienceTimeline: "Experience Timeline",
     skills: "Skills",
     certifications: "Certifications",
