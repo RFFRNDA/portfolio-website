@@ -56,7 +56,7 @@ export const projects: Project[] = [
     id: "coffee-maturity-segmentation",
     title: {
       en: "Coffee Fruit Maturity Segmentation",
-      id: "Segmentasi Kematangan Buah Kopi",
+      id: "Segmentasi Tingkat Kematangan Buah Kopi",
     },
     category: "Machine Learning",
     role: "ML Researcher",

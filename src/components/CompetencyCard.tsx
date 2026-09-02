@@ -2,7 +2,7 @@ import { useLanguage } from "../context/LanguageContext";
 import { competencies } from "../data/competencies";
 import { Globe, BarChart3, Database, Palette } from "lucide-react";
 
-// Mapping icon berdasarkan ID competency (agar konsisten)
+// Mapping icon 
 const iconMap: Record<string, typeof Globe> = {
   "web-dev": Globe,
   "system-analysis": BarChart3,
@@ -24,19 +24,16 @@ export default function CompetencyCard() {
           {competencies.map((item) => {
             const IconComponent = iconMap[item.id] || Globe;
             return (
-              <div
-                key={item.id}
-                className="rounded-xl border border-[#57626f] bg-[#0c1621] p-6 text-center transition hover:border-[#c85314]"
-              >
+              <div key={item.id} className="rounded-xl border border-text-on-dark-secondary bg-dark-base p-6 text-center transition">
                 <div className="mb-4 flex justify-center">
-                  <div className="rounded-full bg-[#c85314]/10 p-3 text-[#c85314]">
+                  <div className="rounded-full bg-accent-orange/10 p-3 text-accent-orange">
                     <IconComponent size={32} strokeWidth={1.5} />
                   </div>
                 </div>
-                <h3 className="mb-2 text-lg font-bold text-[#f3f4f0]">
+                <h3 className="mb-2 text-lg font-bold text-text-on-dark">
                   {item.title[language]}
                 </h3>
-                <p className="text-sm leading-relaxed text-[#57626f]">
+                <p className="text-sm leading-relaxed text-text-on-dark-secondary">
                   {item.description[language]}
                 </p>
               </div>

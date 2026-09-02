@@ -1,5 +1,6 @@
 import { useLanguage } from "../context/LanguageContext";
 import type { Project } from "../types/project";
+import { ArrowRight } from "lucide-react";
 
 interface ProjectCardProps {
   project: Project;
@@ -19,9 +20,9 @@ export default function ProjectCard({
   // Untuk variant preview di Home, kita tampilkan lebih ringkas
   if (variant === "preview") {
     return (
-      <div className="group rounded-xl border border-[#57626f] bg-[#e0e3d9] p-4 transition-all hover:border-[#c85314]">
+      <div className="group rounded-xl border border-text-on-dark-secondary bg-warm-base p-4 transition-all hover:border-accent-orange">
         {/* Thumbnail / Gambar Project */}
-        <div className="relative mb-4 aspect-video w-full overflow-hidden rounded-lg bg-[#57626f]">
+        <div className="relative mb-4 aspect-video w-full overflow-hidden rounded-lg bg-text-on-dark-secondary">
           {project.image ? (
             <img
               src={project.image}
@@ -30,40 +31,27 @@ export default function ProjectCard({
             />
           ) : (
             // Placeholder jika tidak ada gambar
-            <div className="flex h-full items-center justify-center text-[#f3f4f0]">
+            <div className="flex h-full items-center justify-center text-text-on-dark">
               {project.category}
             </div>
           )}
         </div>
 
         {/* Badge Kategori */}
-        <span className="mb-2 inline-block rounded-full bg-[#c85314] px-3 py-1 text-xs font-medium uppercase tracking-wider text-[#f3f4f0]">
+        <span className="mb-2 inline-block rounded-full bg-accent-orange px-3 py-1 text-xs font-medium uppercase tracking-wider text-text-on-dark">
           {project.category}
         </span>
 
         {/* Judul */}
-        <h3 className="mb-1 text-xl font-bold text-[#0c1621]">{title}</h3>
+        <h3 className="mb-1 text-xl font-bold text-dark-base">{title}</h3>
 
         {/* Deskripsi singkat (opsional untuk preview) */}
-        <p className="mb-3 line-clamp-2 text-sm text-[#445569]">{description}</p>
+        <p className="mb-3 line-clamp-2 text-sm text-text-on-warm-secondary">{description}</p>
 
         {/* CTA Arrow */}
-        <div className="flex items-center text-sm font-medium text-[#c85314] transition-all group-hover:translate-x-1">
+        <div className="flex items-center text-sm font-medium text-accent-orange transition-all group-hover:translate-x-1">
           Lihat Detail
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="ml-1 h-4 w-4"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M14 5l7 7m0 0l-7 7m7-7H3"
-            />
-          </svg>
+          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
         </div>
       </div>
     );

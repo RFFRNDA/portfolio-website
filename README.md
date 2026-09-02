@@ -19,6 +19,6 @@ npm run build
 - [X] Data layer (types, data/*.ts, i18n)
 - [X] LanguageContext
 - [X] Navbar & Footer
-- [ ] Home page
+- [X] Home page
 - [ ] About page
 - [ ] Project page

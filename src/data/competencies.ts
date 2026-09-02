@@ -14,8 +14,8 @@ export const competencies: Competency[] = [
       id: "Pengembangan Web",
     },
     description: {
-      en: "Building responsive, end-to-end web applications — from Laravel backends to clean, user-friendly interfaces.",
-      id: "Membangun aplikasi web end-to-end yang responsif — dari backend Laravel hingga antarmuka yang rapi dan mudah digunakan.",
+      en: "Building responsive, end-to-end web applications with clean and user-friendly interfaces.",
+      id: "Membangun aplikasi web end-to-end yang responsif dengan antarmuka yang rapi dan mudah digunakan.",
     },
   },
   {
@@ -25,8 +25,8 @@ export const competencies: Competency[] = [
       id: "Analisis Sistem",
     },
     description: {
-      en: "Translating business needs into structured designs — requirements, BPMN workflows, and UML diagrams.",
-      id: "Menerjemahkan kebutuhan bisnis jadi desain terstruktur — requirements, alur BPMN, dan diagram UML.",
+      en: "Translating business needs into structured designs. From system Requirements, BPMN workflows, and UML diagrams.",
+      id: "Menerjemahkan kebutuhan bisnis jadi desain terstruktur, mulai dari kebutuhan sistem, alur BPMN, dan diagram UML.",
     },
   },
   {
@@ -36,8 +36,8 @@ export const competencies: Competency[] = [
       id: "Data & ML",
     },
     description: {
-      en: "Cleaning, analyzing, and modeling data — from Excel pivot dashboards to computer vision with YOLO.",
-      id: "Membersihkan, menganalisis, dan memodelkan data — dari dashboard pivot Excel hingga computer vision dengan YOLO.",
+      en: "Cleaning, analyzing, and modeling data, From Excel pivot dashboards to computer vision with YOLO.",
+      id: "Membersihkan, menganalisis, dan memodelkan data. Dari dashboard pivot Excel hingga computer vision dengan YOLO.",
     },
   },
   {
@@ -47,8 +47,8 @@ export const competencies: Competency[] = [
       id: "Desain",
     },
     description: {
-      en: "Creating cohesive visual experiences — from wireframes and user flows to clean UI/UX and visual systems.",
-      id: "Menciptakan pengalaman visual yang selaras — dari wireframe dan user flow hingga UI/UX yang rapi dan sistem visual.",
+      en: "Creating cohesive visual experiences. From wireframes and user flows to clean UI/UX and visual systems.",
+      id: "Menciptakan pengalaman visual yang selaras. Dari wireframe dan user flow hingga UI/UX yang rapi dan visual sistem.",
     },
   },
 ];

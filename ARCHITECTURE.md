@@ -16,19 +16,21 @@ portfolio-website/
 │   │   ├── About.tsx
 │   │   └── Project.tsx       
 │   ├── data/
-│   │   |── projects.ts
 │   │   ├── certifications.ts
+│   │   ├── competencies.ts
 │   │   ├── experiences.ts
+│   │   |── projects.ts
+│   │   |── techFocus.ts
 │   │   └── i18n/
 │   │       ├── en.ts
 │   │       └── id.ts
 │   ├── context/
 │   │   └── LanguageContext.tsx 
 │   ├── types/
-│   │   ├── language.ts
-│   │   ├── project.ts
 │   │   ├── certification.ts
 │   │   └── experience.ts
+│   │   ├── language.ts
+│   │   ├── project.ts
 │   ├── App.tsx
 │   ├── main.tsx
 │   └── index.css          
