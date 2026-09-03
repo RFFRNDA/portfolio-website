@@ -1,5 +1,5 @@
-import { useLanguage } from "../context/LanguageContext";
-import { experiences } from "../data/experiences";
+import { useLanguage } from "../../context/LanguageContext";
+import { experiences } from "../../data/experiences";
 
 export default function ExperienceTimeline() {
   const { t, language } = useLanguage();

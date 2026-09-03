@@ -1,5 +1,5 @@
-import { useLanguage } from "../context/LanguageContext";
-import type { Certification } from "../types/certification";
+import { useLanguage } from "../../context/LanguageContext";
+import type { Certification } from "../../types/certification";
 import { ArrowRight } from "lucide-react";
 
 interface CertificationCardProps {

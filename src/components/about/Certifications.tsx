@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { useLanguage } from "../context/LanguageContext";
-import { certifications } from "../data/certifications";
-import type { Certification } from "../types/certification";
+import { useLanguage } from "../../context/LanguageContext";
+import { certifications } from "../../data/certifications";
+import type { Certification } from "../../types/certification";
 import CertificationCard from "./CertificationCard";
 import { X } from "lucide-react";
 

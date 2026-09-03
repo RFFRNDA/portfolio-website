@@ -1,8 +1,8 @@
-import Hero from "../components/Hero";
-import AboutMePreview from "../components/AboutMePreview";
-import CompetencyCard from "../components/CompetencyCard";
-import ExperiencePreview from "../components/ExperiencePreview";
-import FeaturedProjects from "../components/FeaturedProjects";
+import Hero from "../components/home/Hero";
+import AboutMePreview from "../components/home/AboutMePreview";
+import CompetencyCard from "../components/home/CompetencyCard";
+import ExperiencePreview from "../components/home/ExperiencePreview";
+import FeaturedProjects from "../components/home/FeaturedProjects";
 
 function Home() {
   return (

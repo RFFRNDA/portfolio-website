@@ -87,10 +87,9 @@ Dark theme kurang cocok pakai shadow tradisional (kurang kelihatan di background
 2. Header
 3. Biography
 4. Experience Timeline
-5. Competencies
-6. Skills 
-7. Certifications
-8. Footer
+5. Skills 
+6. Certifications
+7. Footer
 
 ### Project
 1. Navbar

@@ -1,8 +1,8 @@
 // src/components/ExperiencePreview.tsx
 
-import { useLanguage } from "../context/LanguageContext";
-import { experiences } from "../data/experiences";
-import { techFocuses } from "../data/techFocus";
+import { useLanguage } from "../../context/LanguageContext";
+import { experiences } from "../../data/experiences";
+import { techFocuses } from "../../data/techFocus";
 
 function DotScale({ level }: { level: number }) {
   const dots = Array.from({ length: 5 }, (_, i) => i + 1);

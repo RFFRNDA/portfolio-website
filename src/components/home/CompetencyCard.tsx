@@ -1,5 +1,5 @@
-import { useLanguage } from "../context/LanguageContext";
-import { competencies } from "../data/competencies";
+import { useLanguage } from "../../context/LanguageContext";
+import { competencies } from "../../data/competencies";
 import { Globe, BarChart3, Database, Palette } from "lucide-react";
 
 // Mapping icon 

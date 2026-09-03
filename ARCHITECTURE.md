@@ -8,13 +8,20 @@ portfolio-website/
 ├── public/
 │   ├── cv.pdf
 │   └── images/
+│       ├── certifications/
+│       ├── projects
+│       ├── profile.webp
+│       ├── rf-logo.png
+│       └── signature.png
 ├── src/
 │   ├── components/  
-│   │   └── ...   # Navbar, Footer, ProjectCard, dll       
-│   ├── pages/      
-│   │   ├── Home.tsx
-│   │   ├── About.tsx
-│   │   └── Project.tsx       
+│   │   ├── about/  
+│   │   │   ├── Hero.tsx
+│   │   │   └── ...
+│   │   ├── home/  
+│   │   └── project/  
+│   ├── context/
+│   │   └── LanguageContext.tsx     
 │   ├── data/
 │   │   ├── certifications.ts
 │   │   ├── competencies.ts
@@ -24,8 +31,10 @@ portfolio-website/
 │   │   └── i18n/
 │   │       ├── en.ts
 │   │       └── id.ts
-│   ├── context/
-│   │   └── LanguageContext.tsx 
+│   ├── pages/      
+│   │   ├── Home.tsx
+│   │   ├── About.tsx
+│   │   └── Project.tsx   
 │   ├── types/
 │   │   ├── certification.ts
 │   │   └── experience.ts

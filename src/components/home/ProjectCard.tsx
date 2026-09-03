@@ -1,5 +1,5 @@
-import { useLanguage } from "../context/LanguageContext";
-import type { Project } from "../types/project";
+import { useLanguage } from "../../context/LanguageContext";
+import type { Project } from "../../types/project";
 import { ArrowRight } from "lucide-react";
 
 interface ProjectCardProps {

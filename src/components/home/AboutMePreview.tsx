@@ -1,4 +1,4 @@
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 import { ArrowRight, UserRound, MapPin, Mail, Clock3 } from "lucide-react";
 
 export default function AboutMePreview() {
@@ -38,7 +38,7 @@ export default function AboutMePreview() {
                   <UserRound className="mt-0.5 h-5 w-5 shrink-0 text-dark-base" strokeWidth={1.7}/>
                   <div>
                     <p className="text-xs font-medium text-dark-base">
-                      {t("aboutPreview.name")}
+                      {t("profil.name")}
                     </p>
                     <p className="text-sm font-bold text-dark-base">
                       Rafif Fernanda
@@ -51,10 +51,10 @@ export default function AboutMePreview() {
                   <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-dark-base" strokeWidth={1.7}/>
                   <div>
                     <p className="text-xs font-medium text-dark-base">
-                      {t("aboutPreview.location")}
+                      {t("profil.locationTitle")}
                     </p>
                     <p className="text-sm font-bold text-dark-base">
-                      {t("aboutPreview.locationValue")}                
+                      {t("profil.locationValue")}                
                     </p>
                   </div>
                 </div>
@@ -77,10 +77,10 @@ export default function AboutMePreview() {
                   <Clock3 className="mt-0.5 h-5 w-5 shrink-0 text-dark-base" strokeWidth={1.7}/>
                   <div>
                     <p className="text-xs font-medium text-dark-base">
-                      {t("aboutPreview.availabilityTitle")}
+                      {t("profil.availabilityTitle")}
                     </p>
                     <p className="text-sm font-bold text-dark-base">
-                      {t("aboutPreview.availabilityDescription")}
+                      {t("profil.availabilityValue")}
                     </p>
                   </div>
                 </div>

@@ -22,3 +22,4 @@ npm run build
 - [X] Home page
 - [ ] About page
 - [ ] Project page
+    

@@ -1,7 +1,7 @@
 // src/components/FeaturedProjects.tsx
 
-import { useLanguage } from "../context/LanguageContext";
-import { projects } from "../data/projects";
+import { useLanguage } from "../../context/LanguageContext";
+import { projects } from "../../data/projects";
 import ProjectCard from "./ProjectCard";
 import { ArrowRight } from "lucide-react";
 
