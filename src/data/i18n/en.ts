@@ -56,7 +56,6 @@ export const en = {
   footer: {
     quickLinks: "Quick Links",
     contact: "Contact",
-    location: "Location",
   },
 };
 

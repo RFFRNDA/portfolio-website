@@ -5,7 +5,7 @@ export default function ExperienceTimeline() {
   const { t, language } = useLanguage();
 
   return (
-    <section className="bg-dark-base py-16 md:py-24">
+    <section className="bg-dark-base py-10">
       <div className="container mx-auto max-w-6xl px-6">
         <h2 className="mb-10 font-heading text-3xl font-bold text-text-on-dark md:text-4xl">
           {t("aboutPage.experienceTimeline")}

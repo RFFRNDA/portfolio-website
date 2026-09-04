@@ -10,13 +10,10 @@ export type SkillIcon =
   | "scikitlearn"
   | "pandas"
   | "numpy"
-  | "matplotlib"
-  | "opencv"
   | "laravel"
   | "flask"
   | "react"
   | "tailwind"
-  | "sql"
   | "mysql"
   | "postgresql"
   | "enterpriseArchitect"
@@ -36,6 +33,7 @@ export type SkillIcon =
 export interface Skill {
   name: string;
   icon: SkillIcon;
+  image?: string;
 }
 
 export interface SkillCategory {
@@ -47,12 +45,12 @@ export const skillCategories: SkillCategory[] = [
   {
     title: "Programming",
     skills: [
-      { name: "Python", icon: "python" },
-      { name: "JavaScript", icon: "javascript" },
-      { name: "TypeScript", icon: "typescript" },
-      { name: "PHP", icon: "php" },
       { name: "HTML5", icon: "html5" },
       { name: "CSS3", icon: "css3" },
+      { name: "JavaScript", icon: "javascript" },
+      { name: "TypeScript", icon: "typescript" },
+      { name: "Python", icon: "python" },
+      { name: "PHP", icon: "php" },
     ],
   },
   {
@@ -63,15 +61,13 @@ export const skillCategories: SkillCategory[] = [
       { name: "Scikit-learn", icon: "scikitlearn" },
       { name: "Pandas", icon: "pandas" },
       { name: "NumPy", icon: "numpy" },
-      { name: "Matplotlib", icon: "matplotlib" },
-      { name: "OpenCV", icon: "opencv" },
     ],
   },
   {
     title: "Framework",
     skills: [
       { name: "Laravel", icon: "laravel" },
-      { name: "Flask", icon: "flask" },
+      { name: "Flask", icon: "flask", image: "/images/skills/flask.svg" },
       { name: "React", icon: "react" },
       { name: "Tailwind CSS", icon: "tailwind" },
     ],
@@ -79,7 +75,6 @@ export const skillCategories: SkillCategory[] = [
   {
     title: "Database",
     skills: [
-      { name: "SQL", icon: "sql" },
       { name: "MySQL", icon: "mysql" },
       { name: "PostgreSQL", icon: "postgresql" },
     ],
@@ -87,10 +82,10 @@ export const skillCategories: SkillCategory[] = [
   {
     title: "System Analysis",
     skills: [
-      { name: "Enterprise Architect", icon: "enterpriseArchitect" },
-      { name: "Bizagi", icon: "bizagi" },
-      { name: "Figma", icon: "figma" },
-      { name: "Software Ideas Modeler", icon: "softwareIdeas" },
+      { name: "Enterprise Architect", icon: "enterpriseArchitect", image: "/images/skills/enterprise-architect.png" },
+      { name: "Bizagi", icon: "bizagi", image: "/images/skills/bizagi-modeler.png" },
+      { name: "Figma", icon: "figma", image: "/images/skills/figma.svg" },
+      { name: "Software Ideas Modeler", icon: "softwareIdeas", image: "/images/skills/software-ideas-modeler.png" },
     ],
   },
   {
@@ -98,7 +93,7 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: "Visual Studio Code", icon: "vscode" },
       { name: "Google Colab", icon: "googleColab" },
-      { name: "Laragon", icon: "laragon" },
+      { name: "Laragon", icon: "laragon",image: "/images/skills/laragon.svg" },
       { name: "GitHub", icon: "github" },
       { name: "Trello", icon: "trello" },
     ],
@@ -109,7 +104,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "Microsoft Excel", icon: "excel" },
       { name: "Microsoft Word", icon: "word" },
       { name: "Microsoft PowerPoint", icon: "powerpoint" },
-      { name: "Microsoft Fabric", icon: "fabric" },
+      { name: "Microsoft Fabric", icon: "fabric", image: "/images/skills/microsoft-fabric.svg" },
     ],
   },
 ];

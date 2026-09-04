@@ -1,51 +1,14 @@
 import {
-  SiPython,
-  SiJavascript,
-  SiTypescript,
-  SiPhp,
-  SiHtml5,
-  SiCss,
-  SiTensorflow,
-  SiPytorch,
-  SiScikitlearn,
-  SiPandas,
-  SiNumpy,
-  SiLaravel,
-  SiFlask,
-  SiReact,
-  SiTailwindcss,
-  SiMysql,
-  SiPostgresql,
-  SiFigma,
-  SiGooglecolab,
-  SiGithub,
-  SiTrello,
+  SiPython, SiJavascript, SiTypescript, SiPhp, SiHtml5, SiCss,
+  SiTensorflow, SiPytorch, SiScikitlearn, SiPandas, SiNumpy,
+  SiLaravel, SiReact, SiTailwindcss,
+  SiMysql, SiPostgresql, SiGooglecolab, 
+  SiGithub,SiTrello,
 } from "react-icons/si";
-
-import {
-  FaFileExcel,
-  FaFileWord,
-  FaFilePowerpoint,
-} from "react-icons/fa6";
-
+import { FaFileExcel, FaFileWord, FaFilePowerpoint } from "react-icons/fa6";
 import { VscVscode } from "react-icons/vsc";
-
-import {
-  Database,
-  Workflow,
-  Network,
-  Layers3,
-  MonitorCog,
-  BarChart3,
-  Image,
-} from "lucide-react";
-
 import { useLanguage } from "../../context/LanguageContext";
-import {
-  skillCategories,
-  type SkillIcon,
-} from "../../data/skills";
-
+import { skillCategories,type SkillIcon} from "../../data/skills";
 import type { IconType } from "react-icons";
 
 /**
@@ -55,220 +18,64 @@ const brandIcons: Partial<
   Record<SkillIcon, { icon: IconType; color: string }>
 > = {
   // Programming
-  python: {
-    icon: SiPython,
-    color: "#3776AB",
-  },
-  javascript: {
-    icon: SiJavascript,
-    color: "#F7DF1E",
-  },
-  typescript: {
-    icon: SiTypescript,
-    color: "#3178C6",
-  },
-  php: {
-    icon: SiPhp,
-    color: "#777BB4",
-  },
-  html5: {
-    icon: SiHtml5,
-    color: "#E34F26",
-  },
-  css3: {
-    icon: SiCss,
-    color: "#1572B6",
-  },
+  python: { icon: SiPython, color: "#3776AB" },
+  javascript: { icon: SiJavascript, color: "#F7DF1E" },
+  typescript: { icon: SiTypescript, color: "#3178C6" },
+  php: { icon: SiPhp, color: "#777BB4" },
+  html5: { icon: SiHtml5, color: "#E34F26" },
+  css3: { icon: SiCss, color: "#1572B6" },
 
   // Machine Learning & Data
-  tensorflow: {
-    icon: SiTensorflow,
-    color: "#FF6F00",
-  },
-  pytorch: {
-    icon: SiPytorch,
-    color: "#EE4C2C",
-  },
-  scikitlearn: {
-    icon: SiScikitlearn,
-    color: "#F7931E",
-  },
-  pandas: {
-    icon: SiPandas,
-    color: "#150458",
-  },
-  numpy: {
-    icon: SiNumpy,
-    color: "#013243",
-  },
+  tensorflow: { icon: SiTensorflow, color: "#FF6F00" },
+  pytorch: { icon: SiPytorch, color: "#EE4C2C" },
+  scikitlearn: { icon: SiScikitlearn, color: "#F7931E" },
+  pandas: { icon: SiPandas, color: "#150458" },
+  numpy: { icon: SiNumpy, color: "#013243" },
 
   // Framework
-  laravel: {
-    icon: SiLaravel,
-    color: "#FF2D20",
-  },
-  flask: {
-    icon: SiFlask,
-    color: "#000000",
-  },
-  react: {
-    icon: SiReact,
-    color: "#61DAFB",
-  },
-  tailwind: {
-    icon: SiTailwindcss,
-    color: "#06B6D4",
-  },
+  laravel: { icon: SiLaravel, color: "#FF2D20" },
+  react: { icon: SiReact, color: "#61DAFB" },
+  tailwind: { icon: SiTailwindcss,color: "#06B6D4"},
 
   // Database
-  mysql: {
-    icon: SiMysql,
-    color: "#4479A1",
-  },
-  postgresql: {
-    icon: SiPostgresql,
-    color: "#4169E1",
-  },
-
-  // System Analysis / Design
-  figma: {
-    icon: SiFigma,
-    color: "#F24E1E",
-  },
+  mysql: { icon: SiMysql, color: "#4479A1" },
+  postgresql: { icon: SiPostgresql, color: "#4169E1" },
 
   // Development Tools
-  vscode: {
-    icon: VscVscode,
-    color: "#007ACC",
-  },
-  googleColab: {
-    icon: SiGooglecolab,
-    color: "#F9AB00",
-  },
-  github: {
-    icon: SiGithub,
-    color: "#181717",
-  },
-  trello: {
-    icon: SiTrello,
-    color: "#0C66E4",
-  },
+  vscode: { icon: VscVscode, color: "#007ACC" },
+  googleColab: { icon: SiGooglecolab, color: "#F9AB00" },
+  github: { icon: SiGithub, color: "#181717" },
+  trello: { icon: SiTrello, color: "#0C66E4" },
 
   // Office Applications
-  excel: {
-    icon: FaFileExcel,
-    color: "#217346",
-  },
-  word: {
-    icon: FaFileWord,
-    color: "#2B579A",
-  },
-  powerpoint: {
-    icon: FaFilePowerpoint,
-    color: "#B7472A",
-  },
+  excel: { icon: FaFileExcel, color: "#217346" },
+  word: { icon: FaFileWord, color: "#2B579A" },
+  powerpoint: { icon: FaFilePowerpoint, color: "#B7472A" },
 };
 
-function SkillIconView({ icon }: { icon: SkillIcon }) {
-  const brand = brandIcons[icon];
-
-  if (brand) {
-    const BrandIcon = brand.icon;
-
+function SkillIconView({ icon, image }: { icon: SkillIcon; image?: string; }) {
+  if (image) {
     return (
-      <BrandIcon
-        className="h-8 w-8"
-        style={{ color: brand.color }}
-        aria-hidden="true"
-      />
+      <img src={image} alt="" className="h-8 w-8 object-contain" aria-hidden="true"/>
     );
   }
-
-  switch (icon) {
-    case "sql":
-      return (
-        <Database
-          className="h-8 w-8 text-dark-base"
-          strokeWidth={1.7}
-          aria-hidden="true"
-        />
-      );
-
-    case "matplotlib":
-      return (
-        <BarChart3
-          className="h-8 w-8 text-dark-base"
-          strokeWidth={1.7}
-          aria-hidden="true"
-        />
-      );
-
-    case "opencv":
-      return (
-        <Image
-          className="h-8 w-8 text-dark-base"
-          strokeWidth={1.7}
-          aria-hidden="true"
-        />
-      );
-
-    case "enterpriseArchitect":
-      return (
-        <Workflow
-          className="h-8 w-8 text-dark-base"
-          strokeWidth={1.7}
-          aria-hidden="true"
-        />
-      );
-
-    case "bizagi":
-      return (
-        <Network
-          className="h-8 w-8 text-dark-base"
-          strokeWidth={1.7}
-          aria-hidden="true"
-        />
-      );
-
-    case "softwareIdeas":
-      return (
-        <Layers3
-          className="h-8 w-8 text-dark-base"
-          strokeWidth={1.7}
-          aria-hidden="true"
-        />
-      );
-
-    case "laragon":
-      return (
-        <MonitorCog
-          className="h-8 w-8 text-dark-base"
-          strokeWidth={1.7}
-          aria-hidden="true"
-        />
-      );
-
-    case "fabric":
-      return (
-        <Database
-          className="h-8 w-8 text-dark-base"
-          strokeWidth={1.7}
-          aria-hidden="true"
-        />
-      );
-
-    default:
-      return null;
+  const brand = brandIcons[icon];
+  if (brand) {
+    const BrandIcon = brand.icon;
+    return (
+      <BrandIcon className="h-8 w-8" style={{ color: brand.color }} aria-hidden="true"/>
+    );
   }
+  return null;
 }
 
 export default function Skills() {
   const { t } = useLanguage();
 
   return (
-    <section className="bg-warm-base py-16 md:py-24">
+    <section className="bg-warm-base py-6 pb-6">
       <div className="mx-auto max-w-6xl px-6">
-        <h2 className="mb-12 font-heading text-3xl font-bold text-dark-base md:text-4xl">
+        <h2 className="mb-6 font-heading text-3xl font-bold text-dark-base md:text-4xl">
           {t("aboutPage.skills")}
         </h2>
 
@@ -281,11 +88,7 @@ export default function Skills() {
 
               <div className="flex flex-wrap gap-4">
                 {category.skills.map((skill) => (
-                  <div
-                    key={skill.name}
-                    className="group relative"
-                    aria-label={skill.name}
-                  >
+                  <div key={skill.name} className="group relative" aria-label={skill.name}>
                     {/* Skill icon */}
                     <div
                       className="
@@ -299,9 +102,9 @@ export default function Skills() {
                         group-hover:border-accent-orange
                         group-hover:bg-white
                         group-hover:shadow-md
-                      "
+                     "
                     >
-                      <SkillIconView icon={skill.icon} />
+                    <SkillIconView icon={skill.icon} image={skill.image}/>
                     </div>
 
                     {/* Skill name tooltip */}

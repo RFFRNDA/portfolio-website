@@ -129,11 +129,11 @@ function Footer() {
 						</li>
 						<li className="flex items-center gap-2">
 							<MapPin size={18} />
-							{t("aboutPreview.locationValue")} 
+							{t("profil.locationValue")}
 						</li>
 						<li className="flex items-center gap-2">
 							<Clock3 size={18} />
-							{t("aboutPreview.availabilityDescription")}
+							{t("profil.availabilityValue")}
 						</li>
 					</ul>
 				</div>

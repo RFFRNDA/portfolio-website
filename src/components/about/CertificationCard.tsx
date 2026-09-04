@@ -12,11 +12,11 @@ export default function CertificationCard({ certification, onView }: Certificati
 
   return (
     <div className="rounded-xl border border-text-on-dark-secondary bg-dark-base p-4 transition-all hover:border-accent-orange">
-      <div className="mb-4 aspect-video w-full overflow-hidden rounded-lg bg-text-on-dark-secondary">
+      <div className="mb-4 aspect-[1.414/1] w-full overflow-hidden rounded-lg bg-text-on-dark-secondary">
         <img
           src={certification.image}
           alt={certification.name}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain"
         />
       </div>
 

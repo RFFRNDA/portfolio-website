@@ -7,7 +7,7 @@ export default function AboutHeader() {
 
   return (
     <section className="bg-dark-base">
-      <div className="container flex items-center justify-center mx-auto max-w-6xl px-6">
+      <div className="container flex flex-col gap-4 items-center justify-center mx-auto max-w-6xl px-6 sm:flex-row">
 
         {/* Photo */}
         <div className="relative flex items-center justify-center">
@@ -86,7 +86,7 @@ export default function AboutHeader() {
                 </div>
               </div>
             </div>
-          </div>
+          </div>         
         </div>
       </div>
     </section>

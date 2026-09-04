@@ -10,7 +10,7 @@ export default function Certifications() {
   const [selected, setSelected] = useState<Certification | null>(null);
 
   return (
-    <section className="bg-dark-base py-16 md:py-24">
+    <section className="bg-dark-base py-6">
       <div className="container mx-auto max-w-6xl px-6">
         <h2 className="mb-10 font-heading text-3xl font-bold text-text-on-dark md:text-4xl">
           {t("aboutPage.certifications")}
@@ -46,11 +46,11 @@ export default function Certifications() {
               <X className="h-5 w-5" />
             </button>
 
-            <div className="mb-4 aspect-video w-full overflow-hidden rounded-lg bg-text-on-dark-secondary">
+            <div className="mb-4 aspect-[1.414/1] w-full overflow-hidden rounded-lg bg-text-on-dark-secondary">
               <img
                 src={selected.image}
                 alt={selected.name}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
               />
             </div>
 
@@ -65,7 +65,7 @@ export default function Certifications() {
               {selected.expirationDate && ` · ${t("certification.expires")} ${selected.expirationDate}`}
             </p>
 
-            <p className="mb-4 text-sm leading-relaxed text-text-on-warm-secondary">
+            <p className="mb-4 text-sm text-justify leading-relaxed text-text-on-warm-secondary">
               {selected.description[language]}
             </p>
 
