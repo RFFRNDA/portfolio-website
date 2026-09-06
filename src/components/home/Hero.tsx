@@ -16,7 +16,7 @@ export default function Hero() {
             <h1 className="my-1 font-heading text-6xl font-bold text-text-on-dark md:text-5xl lg:text-6xl">
               RAFIF FERNANDA
             </h1>
-            <p className="text-sm text-text-on-dark-secondary lg:max-w-[370px]">
+            <p className="text-sm text-justify text-text-on-dark-secondary lg:max-w-[370px]">
               {t("hero.tagline")}
             </p>
 

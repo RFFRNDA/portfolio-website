@@ -18,6 +18,9 @@ portfolio-website/
 │   │   ├── about/  
 │   │   │   ├── Hero.tsx
 │   │   │   └── ...
+│   │   ├── common/  
+│   │   │   ├── ScrolToTop.tsx
+│   │   │   └── SocialLinks.tsx
 │   │   ├── home/  
 │   │   └── project/  
 │   ├── context/
@@ -27,6 +30,7 @@ portfolio-website/
 │   │   ├── competencies.ts
 │   │   ├── experiences.ts
 │   │   |── projects.ts
+│   │   |── socials.ts
 │   │   |── techFocus.ts
 │   │   └── i18n/
 │   │       ├── en.ts

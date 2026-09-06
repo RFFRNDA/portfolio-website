@@ -4,7 +4,7 @@ name: "Portfolio Rafif"
 
 colors:
   primary: "#0c1621"
-  secondary: "#e0e3d9"
+  secondary: "#d3d6cd"
   tertiary: "#c85314"
   text-on-dark: "#f3f4f0"
   text-on-dark-secondary: "#57626f"

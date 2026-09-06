@@ -9,19 +9,18 @@ export const en = {
     badgeOpenToWork: "Open to Work",
     ctaViewProjects: "View My Project",
   },
-  profil: {
+  profile: {
     name: "Name",
     locationTitle: "Location",
     locationValue: "Probolinggo, East Java, Indonesia",
     availabilityTitle: "Availability",
-    availabilityValue: "Open to Work",
+    availabilityValue: "Available for freelance work and full-time opportunities",
     educationTitle: "Education",
-    educationValue: "Bachelor of Informatics, Faculty of Computer Science\n\nGPA 3.75 / 4.00 - Excellent\n\nGraduated January 2026",
+    educationValue: "Jember University\n\nBachelor of Informatics, Faculty of Computer Science\n\nGPA 3.75 / 4.00 - Excellent\n\nGraduated January 2026",
   },
   aboutPreview: {
     title: "About Me",
-    tagline1: "Designing Solution.",
-    tagline2: "From Idea To Impact.",
+    tagline: "Designing Solution.\n\nFrom Idea To Impact.",
     description: "Informatics graduate passionate about turning ideas and complex requirements into practical digital solutions that create impact. Combining analytical thinking, data insights, user-centered design, and web development.",
     ctaMore: "More About Me", 
   },
@@ -37,10 +36,10 @@ export const en = {
     ctaViewAll: "View All Projects",
   },
   aboutPage: {
-    biography: "Biography",
-    biographyText: "I'm an Informatics graduate from Jember University (GPA 3.75/4.00), with a background spanning web-based information systems, dataset preparation and analysis for machine learning, and coordinating cross-functional development teams.\n\nMy work has taken me from frontend development on a university information system, to leading a five-person team through a full software development lifecycle, to running independent data analysis and computer vision research. The constant across all of it: taking a messy, complex problem and turning it into something structured, usable, and reliable.\n\nI care about the details — clean data, clear requirements, interfaces people can actually use — and I'm always looking for the next system worth improving.",
-    experienceTimeline: "Experience Timeline",
-    skills: "Skills",
+    experience: "Experience",
+    aboutMe: "Informatics graduate from Jember University with experience in web development, system analysis, data management, and machine learning. I enjoy turning complex requirements and problems into practical and reliable digital solutions.\n\nI believe that functionality and visual quality should go hand in hand. Beyond building solutions that work efficiently, I care about creating clear, intuitive, and visually cohesive experiences. I strive to build digital solutions that are not only reliable, but also meaningful and impactful.",
+    technologies: "Technologies",
+    education: "Education",
     certifications: "Certifications",
   },
   certification: {

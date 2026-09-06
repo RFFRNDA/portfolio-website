@@ -3,6 +3,7 @@ import { ArrowRight, UserRound, MapPin, Mail, Clock3 } from "lucide-react";
 
 export default function AboutMePreview() {
   const { t } = useLanguage();
+  const paragraphs = t("aboutPreview.tagline").split("\n\n");
 
   return (
     <section className="bg-warm-base py-4">
@@ -14,12 +15,11 @@ export default function AboutMePreview() {
               {t("aboutPreview.title")}
             </p>
             <h2 className="font-heading text-3xl font-bold text-dark-base md:text-4xl">
-              {t("aboutPreview.tagline1")}  
+              {paragraphs.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))} 
             </h2>
-            <h2 className="font-heading text-3xl font-bold text-dark-base md:text-4xl">
-              {t("aboutPreview.tagline2")}  
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-text-on-warm-secondary text-balance">
+            <p className="mt-4 text-base leading-relaxed text-text-on-warm-secondary text-justify">
               {t("aboutPreview.description")}
             </p>
             <a href="/about" className="mt-6 inline-flex items-center gap-2 whitespace-nowrap bg-dark-base rounded-lg text-sm font-medium text-text-on-dark transition-all hover:bg-dark-base/75 hover:scale-105 active:scale-95 px-6 py-2.5 sm:px-6 sm:py-3 sm:text-base">
@@ -38,7 +38,7 @@ export default function AboutMePreview() {
                   <UserRound className="mt-0.5 h-5 w-5 shrink-0 text-dark-base" strokeWidth={1.7}/>
                   <div>
                     <p className="text-xs font-medium text-dark-base">
-                      {t("profil.name")}
+                      {t("profile.name")}
                     </p>
                     <p className="text-sm font-bold text-dark-base">
                       Rafif Fernanda
@@ -51,10 +51,10 @@ export default function AboutMePreview() {
                   <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-dark-base" strokeWidth={1.7}/>
                   <div>
                     <p className="text-xs font-medium text-dark-base">
-                      {t("profil.locationTitle")}
+                      {t("profile.locationTitle")}
                     </p>
                     <p className="text-sm font-bold text-dark-base">
-                      {t("profil.locationValue")}                
+                      {t("profile.locationValue")}                
                     </p>
                   </div>
                 </div>
@@ -77,10 +77,10 @@ export default function AboutMePreview() {
                   <Clock3 className="mt-0.5 h-5 w-5 shrink-0 text-dark-base" strokeWidth={1.7}/>
                   <div>
                     <p className="text-xs font-medium text-dark-base">
-                      {t("profil.availabilityTitle")}
+                      {t("profile.availabilityTitle")}
                     </p>
                     <p className="text-sm font-bold text-dark-base">
-                      {t("profil.availabilityValue")}
+                      {t("profile.availabilityValue")}
                     </p>
                   </div>
                 </div>

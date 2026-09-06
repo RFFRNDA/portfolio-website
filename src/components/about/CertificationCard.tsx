@@ -11,7 +11,7 @@ export default function CertificationCard({ certification, onView }: Certificati
   const { t } = useLanguage();
 
   return (
-    <div className="rounded-xl border border-text-on-dark-secondary bg-dark-base p-4 transition-all hover:border-accent-orange">
+    <div onClick={onView} className="rounded-xl border border-text-on-dark-secondary bg-dark-base p-4 transition-all hover:border-accent-orange hover:scale-105">
       <div className="mb-4 aspect-[1.414/1] w-full overflow-hidden rounded-lg bg-text-on-dark-secondary">
         <img
           src={certification.image}

@@ -8,14 +8,14 @@ import {
 import { FaFileExcel, FaFileWord, FaFilePowerpoint } from "react-icons/fa6";
 import { VscVscode } from "react-icons/vsc";
 import { useLanguage } from "../../context/LanguageContext";
-import { skillCategories,type SkillIcon} from "../../data/skills";
+import { skillCategories,type TechIcon} from "../../data/technologies";
 import type { IconType } from "react-icons";
 
 /**
  * Brand icon + brand color
  */
 const brandIcons: Partial<
-  Record<SkillIcon, { icon: IconType; color: string }>
+  Record<TechIcon, { icon: IconType; color: string }>
 > = {
   // Programming
   python: { icon: SiPython, color: "#3776AB" },
@@ -53,7 +53,7 @@ const brandIcons: Partial<
   powerpoint: { icon: FaFilePowerpoint, color: "#B7472A" },
 };
 
-function SkillIconView({ icon, image }: { icon: SkillIcon; image?: string; }) {
+function SkillIconView({ icon, image }: { icon: TechIcon; image?: string; }) {
   if (image) {
     return (
       <img src={image} alt="" className="h-8 w-8 object-contain" aria-hidden="true"/>
@@ -76,7 +76,7 @@ export default function Skills() {
     <section className="bg-warm-base py-6 pb-6">
       <div className="mx-auto max-w-6xl px-6">
         <h2 className="mb-6 font-heading text-3xl font-bold text-dark-base md:text-4xl">
-          {t("aboutPage.skills")}
+          {t("aboutPage.technologies")}
         </h2>
 
         <div className="grid grid-cols-1 gap-x-16 gap-y-6 lg:grid-cols-2">

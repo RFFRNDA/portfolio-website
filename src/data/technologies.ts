@@ -1,4 +1,4 @@
-export type SkillIcon =
+export type TechIcon =
   | "python"
   | "javascript"
   | "typescript"
@@ -32,16 +32,16 @@ export type SkillIcon =
 
 export interface Skill {
   name: string;
-  icon: SkillIcon;
+  icon: TechIcon;
   image?: string;
 }
 
-export interface SkillCategory {
+export interface TechCategory {
   title: string;
   skills: Skill[];
 }
 
-export const skillCategories: SkillCategory[] = [
+export const skillCategories: TechCategory[] = [
   {
     title: "Programming",
     skills: [

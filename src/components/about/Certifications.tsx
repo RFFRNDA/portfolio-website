@@ -12,7 +12,7 @@ export default function Certifications() {
   return (
     <section className="bg-dark-base py-6">
       <div className="container mx-auto max-w-6xl px-6">
-        <h2 className="mb-10 font-heading text-3xl font-bold text-text-on-dark md:text-4xl">
+        <h2 className="mb-8 font-heading text-3xl font-bold text-text-on-dark md:text-4xl">
           {t("aboutPage.certifications")}
         </h2>
 
@@ -34,16 +34,16 @@ export default function Certifications() {
           onClick={() => setSelected(null)}
         >
           <div
-            className="relative max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-xl bg-warm-base p-6"
+            className="relative max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-xl bg-warm-base p-2 sm:p-6"
             onClick={(event) => event.stopPropagation()}
           >
             <button
               type="button"
               onClick={() => setSelected(null)}
               aria-label="Close"
-              className="absolute right-4 top-4 text-dark-base transition-colors hover:text-accent-orange"
+              className="absolute right-1 top-1 text-dark-base transition-colors hover:text-accent-orange rounded-full bg-white"
             >
-              <X className="h-5 w-5" />
+              <X className="h-5 w-5" strokeWidth={3} />
             </button>
 
             <div className="mb-4 aspect-[1.414/1] w-full overflow-hidden rounded-lg bg-text-on-dark-secondary">

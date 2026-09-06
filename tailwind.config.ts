@@ -6,7 +6,7 @@ export default {
     extend: {
       colors: {
         "dark-base": "#0c1621",
-        "warm-base": "#e0e3d9",
+        "warm-base": "#d3d6cd",
         "accent-orange": "#c85314",
         "text-on-dark": "#f3f4f0",
         "text-on-dark-secondary": "#57626f",

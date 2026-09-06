@@ -45,8 +45,10 @@ export default function ExperiencePreview() {
                     <div className="absolute left-0 top-1.5 h-3 w-3 rounded-full border-2 border-[#c85314] bg-[#0c1621]"></div>
                     <div className="flex flex-wrap items-baseline gap-2">
                       <span className="text-sm font-medium text-text-on-dark-secondary">
-                        {exp.startDate} - {exp.endDate}
+                        {exp.startDate[language]} - {exp.endDate[language]}
                       </span>
+                    </div>
+                    <div className=" mt-1 flex flex-wrap items-baseline gap-2">
                       <span className="text-base font-bold text-text-on-dark">
                         {exp.role}
                       </span>
@@ -73,7 +75,7 @@ export default function ExperiencePreview() {
           </div>
 
           {/* Kolom Kanan - Technical Focus */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center max-w-lg">
             <h3 className="mb-4 text-xl font-semibold text-text-on-dark">
               Technical Focus
             </h3>

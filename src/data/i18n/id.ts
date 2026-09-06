@@ -11,20 +11,19 @@ export const id: UIDictionary = {
     badgeOpenToWork: "Open to Work",
     ctaViewProjects: "Lihat Project Saya",
   },
-  profil: {
+  profile: {
     name: "Nama",
     locationTitle: "Lokasi",
     locationValue: "Probolinggo, Jawa Timur, Indonesia",
     availabilityTitle: "Ketersediaan",
-    availabilityValue: "Terbuka untuk Peluang Baru",
+    availabilityValue: "Terbuka untuk pekerjaan Freelance dam  penuh waktu",
     educationTitle: "Pendidikan",
-    educationValue: "Sarjana Informatika, Fakultas Ilmu Komputer\n\nIPK 3.75 / 4.00 - Sangat Memuaskan\n\nLulus pada Januari 2026",
+    educationValue: "Universitas Jember\n\nSarjana Informatika, Fakultas Ilmu Komputer\n\nIPK 3.75 / 4.00 - Sangat Memuaskan\n\nLulus pada Januari 2026",
   },
   aboutPreview: {
     title: "Tentang Saya",
-    tagline1: "Merancang Solusi.",
-    tagline2: "Mewujudkan Ide.",
-    description: "Lulusan Informatika yang bersemangat mengubah ide dan kebutuhan yang kompleks menjadi solusi digital praktis yang berdampak. Memadukan pemikiran analitis, insight berbasis data, desain yang berorientasi pada pengguna, dan pengembangan web.",
+    tagline: "Merancang Solusi.\n\nMewujudkan Ide.",
+    description: "Lulusan Informatika yang suka dalam mengubah ide dan kebutuhan yang kompleks menjadi solusi digital praktis yang berdampak. Memadukan pemikiran analitis, insight berbasis data, desain yang berorientasi pada pengguna, dan pengembangan web.",
     ctaMore: "Selengkapnya Tentang Saya",
   },
   whatICanDo: {
@@ -39,10 +38,10 @@ export const id: UIDictionary = {
     ctaViewAll: "Lihat Semua Project",
   },
   aboutPage: {
-    biography: "Biografi",
-    biographyText: "Saya lulusan Informatika dari Universitas Jember (IPK 3.75/4.00), dengan latar belakang di pengembangan sistem informasi berbasis web, penyiapan dan analisis dataset untuk machine learning, hingga koordinasi tim pengembangan lintas fungsi.\n\nPerjalanan saya dimulai dari frontend development untuk sistem informasi fakultas, memimpin tim beranggotakan lima developer melalui siklus pengembangan perangkat lunak penuh, hingga menjalankan riset analisis data dan computer vision secara mandiri. Satu hal yang konsisten di setiap prosesnya: mengubah masalah yang kompleks dan berantakan menjadi sesuatu yang terstruktur, mudah dipakai, dan bisa diandalkan.\n\nSaya memperhatikan detail — data yang bersih, requirement yang jelas, antarmuka yang benar-benar bisa dipakai orang — dan selalu mencari sistem berikutnya yang layak untuk ditingkatkan.",
-    experienceTimeline: "Linimasa Pengalaman",
-    skills: "Keahlian",
+    experience: "Pengalaman",
+    aboutMe: "Lulusan Informatika dari Universitas Jember dengan pengalaman di bidang web development, analisis sistem, pengelolaan data, dan machine learning. Saya senang mengubah kebutuhan dan permasalahan yang kompleks menjadi solusi digital yang praktis dan andal.\n\nSaya percaya bahwa fungsionalitas dan kualitas visual harus berjalan beriringan. Selain membangun solusi yang bekerja secara optimal, saya juga memperhatikan bagaimana solusi tersebut dapat memberikan pengalaman yang jelas, intuitif, dan selaras secara visual. Saya berusaha membangun solusi digital yang tidak hanya andal, tetapi juga bermakna dan memberikan dampak.",
+    technologies: "Teknologi",
+    education: "Pendidikan",
     certifications: "Sertifikasi",
   },
   certification: {
@@ -58,6 +57,5 @@ export const id: UIDictionary = {
   footer: {
     quickLinks: "Tautan Cepat",
     contact: "Kontak",
-    location: "Lokasi",
   },
 };
