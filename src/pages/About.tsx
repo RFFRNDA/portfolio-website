@@ -11,7 +11,7 @@ function About() {
       <AboutHeader />  
       <AboutMe />   
       <section className="bg-dark-base">
-        <div className="container mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 lg:grid-cols-[3fr_7fr]">
+        <div className="container mx-auto grid max-w-6xl grid-cols-1 px-6 lg:grid-cols-[3fr_7fr]">
           <Education />
           <ExperienceTimeline />
         </div>

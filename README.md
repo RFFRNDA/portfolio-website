@@ -20,6 +20,6 @@ npm run build
 - [X] LanguageContext
 - [X] Navbar & Footer
 - [X] Home page
-- [ ] About page
+- [X] About page
 - [ ] Project page
     

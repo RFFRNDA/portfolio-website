@@ -1,15 +1,29 @@
 import { useLanguage } from "../../context/LanguageContext";
 import { ArrowRight, Download } from "lucide-react";
+import Lanyard from "../common/Lanyard";
 
 export default function Hero() {
   const { t } = useLanguage();
 
   return (
     <section className="bg-dark-base">
-      <div className="container mt-2 mx-auto max-w-6xl px-6">
+      <div className="container mx-auto max-w-6xl px-6">
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/*Left Column*/}  
-          <div className="flex flex-col justify-center">
+          <div className="relative flex items-center justify-center">
+            <div className="absolute z-0 h-64 w-64 rounded-full bg-accent-orange opacity-20 blur-3xl md:h-80 md:w-80" aria-hidden="true"></div>
+              <Lanyard
+                position={[0, 0, 20]}
+                gravity={[0, -40, 0]}
+                frontImage="/images/profile.webp"
+                backImage="/images/rf-logo.png"
+                imageFit="contain"
+                lanyardWidth={1.5}
+              />
+          </div>
+
+          {/*Right Column*/}
+          <div className="mb-4 flex flex-col justify-center">
             <p className="text-sm text-accent-orange">
               WEB DEVELOPER & DIGITAL DESIGNER
             </p> 
@@ -29,14 +43,6 @@ export default function Hero() {
                 <Download className="h-4 w-4" />
                 Download CV
               </a>
-            </div>
-          </div>
-
-          {/*Right Column*/}
-          <div className="relative flex items-center justify-center">
-            <div className="absolute z-0 h-64 w-64 rounded-full bg-accent-orange opacity-20 blur-3xl md:h-80 md:w-80" aria-hidden="true"></div>
-            <div className="relative z-10">
-              <img src="/images/profile.webp" alt="Rafif Image" className="block h-auto w-full max-w-[320px] md:max-w-[360px]"/>
             </div>
           </div>
         </div>
