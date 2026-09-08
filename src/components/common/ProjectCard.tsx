@@ -1,7 +1,5 @@
 import { useLanguage } from "../../context/LanguageContext";
 import type { Project } from "../../types/project";
-import { ArrowRight } from "lucide-react";
-
 
 interface ProjectCardProps {
   project: Project;
@@ -14,7 +12,7 @@ export default function ProjectCard({
   variant = "preview",
   onView,
 }: ProjectCardProps) {
-  const { language, t } = useLanguage();
+  const { language } = useLanguage();
   const title = project.title[language];
   const description = project.description[language];
 
