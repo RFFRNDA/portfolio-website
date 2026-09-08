@@ -13,5 +13,6 @@ export interface Project {
     id: string;
   };
   image: string;
+  images?: string[];
   link: string;
 }

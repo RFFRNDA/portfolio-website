@@ -16,7 +16,7 @@ export default function Biography() {
         <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
 
           {/* Information */}
-          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-[0.8fr_1.3fr_1fr_1.6fr]">
             {/* Name */}
             <div className="flex items-start gap-3">
               <UserRound
@@ -95,6 +95,7 @@ export default function Biography() {
             <SocialLinks
               size={24}
               className="gap-5"
+              variant="card"
             />
           </div>
 

@@ -10,9 +10,12 @@ export default function Education() {
         {t("aboutPage.education")}
       </h2>
 
-      <div className="text-base leading-relaxed text-[#3d3e3f]">
+      <div className="text-base leading-relaxed text-text-on-dark">
+        <p className="text-accent-orange">
+          {t("profile.educationHead")}
+        </p>
         {paragraphs.map((paragraph, index) => (
-          <p key={index} className="mb-2">
+          <p key={index} >
             {paragraph}
           </p>
         ))}

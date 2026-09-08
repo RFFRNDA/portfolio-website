@@ -7,7 +7,7 @@ export default function AboutHeader() {
 
   return (
     <section className="bg-dark-base">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-4 px-6 sm:flex-row sm:items-stretch">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-4 px-6 lg:flex-row lg:items-stretch">
         {/* Left Column */}
         <div className="relative flex w-full min-w-0 flex-1 items-end justify-center">
           <div className="absolute z-0 h-64 w-64 rounded-full bg-accent-orange opacity-20 blur-3xl md:h-80 md:w-80" aria-hidden="true"></div>
@@ -25,7 +25,7 @@ export default function AboutHeader() {
         <div className="flex w-full min-w-0 flex-1 flex-col justify-center">
           <div className="text-base leading-relaxed text-text-on-warm text-justify">
             {paragraphs.map((paragraph, index) => (
-              <p key={index} className="mb-2 text-justify">
+              <p key={index} className="my-2 text-justify">
                 {paragraph}
               </p>
             ))}

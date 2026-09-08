@@ -16,7 +16,8 @@ export const en = {
     availabilityTitle: "Availability",
     availabilityValue: "Available for freelance work and full-time opportunities",
     educationTitle: "Education",
-    educationValue: "Jember University\n\nBachelor of Informatics, Faculty of Computer Science\n\nGPA 3.75 / 4.00 - Excellent\n\nGraduated January 2026",
+    educationHead: "Jember University",
+    educationValue: "Bachelor of Informatics\n\nGPA 3.75 / 4.00 - Excellent\n\nGraduated January 2026",
   },
   aboutPreview: {
     title: "About Me",

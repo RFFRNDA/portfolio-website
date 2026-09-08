@@ -44,7 +44,7 @@ Kombinasi dark + bold + warm ini dipilih supaya portfolio tetap terasa profesion
 
 ## Colors
 - **Dark Base** #0c1621 — background section gelap (Hero,'What I Can Do', Experience, Footer) 
-- **Warm Base** #e0e3d9 — background section terang (About, Featured Project)
+- **Warm Base** #d3d6cd — background section terang (About, Featured Project)
 - **Accent Orange** #c85314 — CTA, highlight, brush-stroke texture, badge
 - **Text on Dark** #f3f4f0 — teks utama di atas Dark Base
 - **Text on Dark (secondary)** #57626f — teks sekunder/caption di atas Dark Base

@@ -297,8 +297,7 @@ function Band({
 
     // --- Small RF logo ---
     if (backImage && backTex.image) {
-      const logoSize = frontW * 0.13;
-      
+      const logoSize = frontW * 0.13;     
       const logoX = frontX + frontW * 0.045;
       const logoY = frontY + frontH * 0.025;
 
@@ -360,8 +359,7 @@ function Band({
     if (frontImage && frontTex.image) {
       const frontImg = frontTex.image as HTMLImageElement;
 
-      // Foto dibuat jauh lebih tinggi daripada orange frame.
-      // Tujuannya agar kepala keluar dari frame orange.
+      // Foto dibuat jauh lebih tinggi daripada orange frame agar kepala keluar dari frame orange.
       const imageY = photoY - frontH * 0.20;
       const imageH = photoH + frontH * 0.20;
 
@@ -372,14 +370,10 @@ function Band({
 
       const dw = frontImg.width * scale;
       const dh = frontImg.height * scale;
-
       const dx = photoX + (photoW - dw) / 2;
       const dy = imageY + (imageH - dh) / 2;
 
       ctx.save();
-
-      // Foto boleh keluar ke atas dari orange frame,
-      // tetapi tetap berada di dalam area card.
       ctx.beginPath();
 
       ctx.rect(
@@ -390,15 +384,7 @@ function Band({
       );
 
       ctx.clip();
-
-      ctx.drawImage(
-        frontImg,
-        dx,
-        dy,
-        dw,
-        dh
-      );
-
+      ctx.drawImage( frontImg, dx, dy, dw,dh );
       ctx.restore();
     }
 
@@ -432,7 +418,6 @@ function Band({
 
     // === CREATE THREE.JS TEXTURE ===
     const composite = new THREE.CanvasTexture(canvas);
-
     composite.colorSpace = THREE.SRGBColorSpace;
     composite.flipY = baseMap.flipY;
     composite.anisotropy = 16;
@@ -454,9 +439,9 @@ function Band({
   const [dragged, drag] = useState<false | THREE.Vector3>(false);
   const [hovered, hover] = useState(false);
 
-  useRopeJoint(fixed, j1, [[0, 0, 0], [0, 0, 0], 0.5]);
-  useRopeJoint(j1, j2, [[0, 0, 0], [0, 0, 0], 0.5]);
-  useRopeJoint(j2, j3, [[0, 0, 0], [0, 0, 0], 0.5]);
+  useRopeJoint(fixed, j1, [[0, 0, 0], [0, 0, 0], 0.3]);
+  useRopeJoint(j1, j2, [[0, 0, 0], [0, 0, 0], 0.3]);
+  useRopeJoint(j2, j3, [[0, 0, 0], [0, 0, 0], 0.3]);
   useSphericalJoint(j3, card, [
     [0, 0, 0],
     [0, 1.45, 0]
@@ -524,8 +509,8 @@ function Band({
         >
           <CuboidCollider args={[0.8, 1.125, 0.01]} />
           <group
-            scale={4}
-            position={[0, -3.3, -0.05]}
+            scale={4.25}
+            position={[0, -3.6, -0.05]}
             onPointerOver={() => hover(true)}
             onPointerOut={() => hover(false)}
             onPointerUp={(e: ThreeEvent<PointerEvent>) => {

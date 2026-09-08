@@ -63,11 +63,13 @@ const iconMap = {
 interface SocialLinksProps {
   size?: number;
   className?: string;
+  variant?: "default" | "card";
 }
 
 export default function SocialLinks({
   size = 20,
   className = "",
+  variant = "default",
 }: SocialLinksProps) {
   return (
     <div className={`flex gap-4 ${className}`}>
@@ -81,9 +83,19 @@ export default function SocialLinks({
             target="_blank"
             rel="noopener noreferrer"
             aria-label={social.name}
-            className="text-text-on-dark-secondary transition-colors hover:text-accent-orange"
+            className={
+              variant === "card"
+                ? "group relative flex h-12 w-12 items-center justify-center rounded-lg border border-text-on-dark-secondary text-text-on-dark-secondary transition-all duration-200 hover:-translate-y-1 hover:border-accent-orange hover:text-accent-orange hover:shadow-[0_4px_0_#c85314] focus:outline-none focus:-translate-y-1 focus:border-accent-orange focus:text-accent-orange focus:shadow-[0_4px_0_#c85314]"
+                : "text-text-on-dark-secondary transition-colors hover:text-accent-orange"
+            }
           >
             <Icon size={size} />
+
+            {variant === "card" && (
+              <span className="pointer-events-none absolute left-1/2 top-full z-10 mt-2 -translate-x-1/2 whitespace-nowrap rounded-md bg-dark-base px-2.5 py-1 text-xs font-medium text-text-on-dark opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus:opacity-100">
+                {social.name}
+              </span>
+            )}
           </a>
         );
       })}

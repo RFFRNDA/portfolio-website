@@ -9,20 +9,38 @@ portfolio-website/
 │   ├── cv.pdf
 │   └── images/
 │       ├── certifications/
-│       ├── projects
+│       │   ├── data-analyst.jpg
+│       │   ├── fullstack-gits.jpg
+│       │   └── ...
+│       ├── projects/
+│       ├── skills/
+│       │   ├── figma.svg
+│       │   ├── flask.svg
+│       │   └── ...
 │       ├── profile.webp
 │       ├── rf-logo.png
 │       └── signature.png
 ├── src/
+│   ├── assets/  
+│   │   └── lanyard/  
+│   │       ├── card.glb
+│   │       └── lanyard.png
 │   ├── components/  
 │   │   ├── about/  
-│   │   │   ├── Hero.tsx
+│   │   │   ├── AboutHeader.tsx
+│   │   │   ├── Biography.tsx
 │   │   │   └── ...
 │   │   ├── common/  
+│   │   │   ├── Lanyard.tsx
 │   │   │   ├── ScrolToTop.tsx
 │   │   │   └── SocialLinks.tsx
 │   │   ├── home/  
-│   │   └── project/  
+│   │   │   ├── Hero.tsx
+│   │   │   ├── AboutMePreview.tsx
+│   │   │   └── ...
+│   │   ├── project/  
+│   │   ├── Footer.tsx  
+│   │   └── Navbar.tsx  
 │   ├── context/
 │   │   └── LanguageContext.tsx     
 │   ├── data/
@@ -45,8 +63,9 @@ portfolio-website/
 │   │   ├── language.ts
 │   │   ├── project.ts
 │   ├── App.tsx
+│   ├── index.css          
 │   ├── main.tsx
-│   └── index.css          
+│   └── vite-env.d.ts          
 ├── tailwind.config.ts     
 ├── index.html
 ├── package.json

@@ -1,8 +1,13 @@
+import ProjectGrid from "../components/project/ProjectGrid";
+import ProjectHeader from "../components/project/ProjectHeader";
+
+
 function Project() {
   return (
-    <div>
-      <h1>Project page — TODO</h1>
-    </div>
+    <main>
+      <ProjectHeader />
+      <ProjectGrid />
+    </main>
   );
 }
 

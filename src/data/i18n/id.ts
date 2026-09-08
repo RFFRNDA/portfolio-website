@@ -18,7 +18,8 @@ export const id: UIDictionary = {
     availabilityTitle: "Ketersediaan",
     availabilityValue: "Terbuka untuk pekerjaan Freelance dam  penuh waktu",
     educationTitle: "Pendidikan",
-    educationValue: "Universitas Jember\n\nSarjana Informatika, Fakultas Ilmu Komputer\n\nIPK 3.75 / 4.00 - Sangat Memuaskan\n\nLulus pada Januari 2026",
+    educationHead: "Universitas Jember",
+    educationValue: "Sarjana Informatika\n\nIPK 3.75 / 4.00 - Sangat Memuaskan\n\nLulus pada Januari 2026",
   },
   aboutPreview: {
     title: "Tentang Saya",
@@ -50,7 +51,7 @@ export const id: UIDictionary = {
     expires: "Berlaku hingga",
   },
   projectPage: {
-    title: "Project",
+    title: "Proyek",
     filterAll: "Semua",
     viewDetail: "Lihat Detail",
   },

@@ -37,7 +37,7 @@ export default function ExperienceTimeline() {
                   {exp.role}
                 </span>
 
-                <span className="text-sm text-text-on-dark-secondary">
+                <span className="text-sm text-accent-orange">
                   @ {exp.company}
                 </span>
               </div>

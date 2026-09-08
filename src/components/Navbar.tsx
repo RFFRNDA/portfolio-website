@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 
 // Each nav item's key must be a valid t() key from UIDictionary.
@@ -44,9 +44,10 @@ function Navbar() {
           <button
             type="button"
             onClick={() => setLanguage(language === "en" ? "id" : "en")}
-            className="rounded-lg border border-text-on-dark-secondary px-3 py-1 font-body text-xs uppercase tracking-wide text-text-on-dark transition-colors hover:border-accent-orange hover:text-accent-orange"
+            className="flex flex-row items-center gap-1 rounded-lg border border-text-on-dark-secondary px-2 py-1 font-body text-xs uppercase tracking-wide text-text-on-dark transition-colors hover:border-accent-orange hover:text-accent-orange"
           >
-            {language === "en" ? "EN" : "ID"}
+            <Globe size={22} />
+            {language === "en" ? "EN" : "ID" }
           </button>
 
           <button
