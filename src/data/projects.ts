@@ -12,8 +12,8 @@ export const projects: Project[] = [
     stack: ["Microsoft Excel", "Pivot Table", "Pivot Chart"],
     duration: "Jul 2026",
     description: {
-      en: "Cleaned and analyzed 29 years (1996–2024) of Indonesia's trade data from BPS, then built a static analytical dashboard using pivot tables and charts, identifying a shift toward net-importer status and 71% import dependency on refined fuel.",
-      id: "Membersihkan dan menganalisis 29 tahun (1996–2024) data perdagangan Indonesia dari BPS, lalu membangun dashboard analitik statis menggunakan pivot table dan chart, mengungkap pergeseran menjadi net-importer dan ketergantungan impor BBM olahan sebesar 71%.",
+      en: "Conducted a 29-year time-series analysis (1966–2024) of Indonesia’s historical oil and gas export and import data from Statistics Indonesia (BPS) to identify structural patterns, economic anomalies, and import dependency.\n\nPerformed Exploratory Data Analysis (EDA) using pivot tables and charts, then developed a comprehensive Analytical Report applying Data Storytelling principles.\n\nEmpirically demonstrated Indonesia’s transition into a net oil and gas importer and found that dependence on finished petroleum products (fuel) had surged to 71% of the total import burden.",
+      id: "Melakukan analisis time-series pada data historis nilai ekspor dan impor migas Indonesia selama 29 tahun (1966-2024) dari Badan Pusat Statistik untuk mengidentifikasi pola struktural, anomali ekonomi, dan tingkat ketergantungan impor.\n\nMelakukan Exploratory Data Analysis (EDA) menggunakan pivot table dan chart lalu menyusun Analytical Report yang komprehensif menggunakan prinsip Data Storytelling.\n\nMembuktikan secara empiris transisi Indonesia menjadi negara net-importer migas dan menemukan bahwa ketergantungan terhadap barang jadi (BBM) telah melonjak hingga 71% dari total beban impor.",
     },
     image: "/images/projects/data-analysis-tradebalance/cover.jpg",
     images: [
@@ -41,8 +41,8 @@ export const projects: Project[] = [
     stack: ["Python", "YOLOv8", "YOLOv11", "Flask", "OpenCV"],
     duration: "Aug 2025 – Jan 2026",
     description: {
-      en: "Thesis project comparing YOLOv8l-seg and YOLOv11m-seg for multi-class coffee fruit maturity instance segmentation, using 2,492 annotated images and a Flask app for real-time model validation.",
-      id: "Project skripsi yang membandingkan YOLOv8l-seg dan YOLOv11m-seg untuk instance segmentation kematangan buah kopi multi-kelas, menggunakan 2.492 gambar beranotasi dan aplikasi Flask untuk validasi model secara real-time.",
+      en: "Performance Analysis of YOLOv8l-seg and YOLOv11m-seg for Multi-Class Coffee Fruit Maturity Instance Segmentation \n\nPrepared, organized, and validated 2,492 annotated images through preprocessing, data splitting, and augmentation to ensure high-quality datasets for machine learning development\n\nDesigned and executed a structured evaluation framework using quantitative performance and computational metrics to objectively identify classification patterns and data-related challenges.\n\nDeveloped a Flask-based application for external model validation with configurable inference parameters and real-time visualization.\n\nIdentified the optimal model based on segmentation accuracy, computational efficiency, and deployment readiness.",
+      id: "'Analisis Performa YOLOv8l-seg dan YOLOv11m-seg untuk Instance Segmentation Multi-Class Tingkat Kematangan Buah Kopi'\n\nMenyiapkan, mengorganisasi, dan memvalidasi 2.492 citra beranotasi melalui proses preprocessing, pembagian data, dan augmentasi untuk memastikan dataset berkualitas tinggi dalam pengembangan machine learning.\n\nMerancang dan menjalankan kerangka evaluasi terstruktur menggunakan metrik performa kuantitatif dan komputasi untuk mengidentifikasi pola klasifikasi serta tantangan terkait data secara objektif.\n\nMengembangkan aplikasi berbasis Flask untuk validasi model secara eksternal dengan parameter inferensi yang dapat dikonfigurasi serta visualisasi secara real-time.\n\nMengidentifikasi model optimal berdasarkan akurasi segmentasi, efisiensi komputasi, dan kesiapan untuk deployment.",
     },
     image: "/images/projects/ml-comvis/cover.webp",
     images: [
@@ -85,6 +85,27 @@ export const projects: Project[] = [
     link: "",
   },
   {
+    id: "business-collab-system",
+    title: {
+      en: "Business Collaboration Information System",
+      id: "Sistem Informasi Kolaborasi Bisnis",
+    },
+    category: "System Analysis",
+    role: "System Analyst & Designer",
+    stack: ["BPMN", "UML", "Figma", "Enterprise Architect"],
+    duration: "Apr 2023 – Jul 2023",
+    description: {
+      en: "Conducted stakeholder interviews and requirements gathering, translating business needs into User Stories and Software Requirements Specifications (SRS).\n\nPerformed system needs analysis and modeled business workflows using BPMN to document process flow and decision points.\n\nDesigned system behavior and interaction logic through Use Case, Activity, Sequence, State, Class, and Collaboration diagrams, complemented by usage Scenarios to guide development.\n\nTranslated functional requirements into UI/UX mockups to support stakeholder validation before develop a web-based system supporting user management, advertising services, and invoicing.",
+      id: "Melakukan wawancara dengan stakeholder dan pengumpulan kebutuhan, kemudian menerjemahkan kebutuhan bisnis ke dalam User Stories dan Software Requirements Specifications (SRS).\n\nMelakukan analisis kebutuhan sistem dan memodelkan alur proses bisnis menggunakan BPMN untuk mendokumentasikan alur proses dan titik pengambilan keputusan.\n\nMerancang perilaku sistem dan logika interaksi melalui Use Case, Activity, Sequence, State, Class, dan Collaboration Diagram, yang dilengkapi dengan Scenario untuk memandu proses pengembangan.\n\n Menerjemahkan kebutuhan fungsional ke dalam mockup UI/UX untuk mendukung validasi stakeholder sebelum mengembangkan sistem berbasis web yang mendukung manajemen user, layanan iklan, dan invoicing.",
+    },
+    image: "/images/projects/bpmn.png",
+    images: [
+      "/images/projects/bpmn.png",
+      "/images/projects/uiuxRope.jpg"
+    ],
+    link: "https://drive.google.com/drive/folders/1nxT3jZFXoQU5und7ib0gkPhKGswfEH_a",
+  },
+  {
     id: "fnb-ordering-gits",
     title: {
       en: "F&B Ordering System",
@@ -96,30 +117,9 @@ export const projects: Project[] = [
     duration: "Aug 2023 – Dec 2023",
     description: {
       en: "A Food & Beverage ordering system built to empower local MSMEs, featuring a seamless customer flow (order, pay, track) alongside a seller dashboard for menu management and sales reporting.",
-      id: "Sistem pemesanan Food & Beverage yang dibuat untuk memberdayakan UMKM lokal, dengan alur pemesanan pelanggan yang lancar (pesan, bayar, lacak) serta dashboard penjual untuk manajemen menu dan laporan penjualan.",
+      id: "Sistem pemesanan Food & Beverage yang dibuat untuk memberdayakan UMKM lokal, dengan alur pemesanan pelanggan (pesan, bayar, lacak pesanan) serta dashboard penjual untuk manajemen menu dan laporan penjualan.",
     },
     image: "/images/projects/uiuxGits.png",
     link: "",
-  },
-  {
-    id: "business-collab-system",
-    title: {
-      en: "Business Collaboration Information System",
-      id: "Sistem Informasi Kolaborasi Bisnis",
-    },
-    category: "System Analysis",
-    role: "System Analyst & Designer",
-    stack: ["BPMN", "UML", "Figma", "Enterprise Architect"],
-    duration: "Apr 2023 – Jul 2023",
-    description: {
-      en: "Gathered stakeholder requirements and modeled business workflows (BPMN) and system behavior (Use Case, Activity, Sequence, Class diagrams) for a web-based system supporting user management, advertising services, and invoicing.",
-      id: "Mengumpulkan kebutuhan stakeholder dan memodelkan alur bisnis (BPMN) serta perilaku sistem (Use Case, Activity, Sequence, Class diagram) untuk sistem berbasis web yang mendukung manajemen user, layanan iklan, dan invoicing.",
-    },
-    image: "/images/projects/bpmn.png",
-    images: [
-      "/images/projects/bpmn.png",
-      "/images/projects/uiuxRope.jpg"
-    ],
-    link: "https://drive.google.com/drive/folders/1nxT3jZFXoQU5und7ib0gkPhKGswfEH_a",
   },
 ];

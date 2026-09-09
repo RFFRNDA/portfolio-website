@@ -30,7 +30,7 @@ export const en = {
   },
   experience: {
     title: "Experience & Technical Focus",
-    ctaViewFullCV: "View Full CV",
+    ctaViewMore: "View More",
   },
   featuredProject: {
     title: "Featured Project",

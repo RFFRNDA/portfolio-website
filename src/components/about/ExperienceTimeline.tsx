@@ -1,11 +1,21 @@
 import { useLanguage } from "../../context/LanguageContext";
 import { experiences } from "../../data/experiences";
+import { useEffect } from "react";
 
 export default function ExperienceTimeline() {
   const { t, language } = useLanguage();
 
+  useEffect(() => {
+    if (window.location.hash === "#experience") {
+      document.getElementById("experience")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, []);
+
   return (
-    <div className="py-10">
+    <div id="experience" className="scroll-mt-20 py-10">
       <h2 className="mb-8 font-heading text-3xl font-bold text-text-on-dark md:text-4xl">
         {t("aboutPage.experience")}
       </h2>

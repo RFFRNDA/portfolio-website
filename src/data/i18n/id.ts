@@ -16,7 +16,7 @@ export const id: UIDictionary = {
     locationTitle: "Lokasi",
     locationValue: "Probolinggo, Jawa Timur, Indonesia",
     availabilityTitle: "Ketersediaan",
-    availabilityValue: "Terbuka untuk pekerjaan Freelance dam  penuh waktu",
+    availabilityValue: "Terbuka untuk pekerjaan Freelance dan  penuh waktu",
     educationTitle: "Pendidikan",
     educationHead: "Universitas Jember",
     educationValue: "Sarjana Informatika\n\nIPK 3.75 / 4.00 - Sangat Memuaskan\n\nLulus pada Januari 2026",
@@ -32,7 +32,7 @@ export const id: UIDictionary = {
   },
   experience: {
     title: "Pengalaman & Fokus Teknis",
-    ctaViewFullCV: "Lihat CV Lengkap",
+    ctaViewMore: "Lihat Selengkapnya",
   },
   featuredProject: {
     title: "Project Unggulan",

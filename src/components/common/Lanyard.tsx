@@ -72,7 +72,7 @@ export default function Lanyard({
   }, []);
 
   return (
-    <div className="relative z-0 flex h-[420px] w-full items-center justify-center md:h-[500px]">
+    <div className="relative z-0 flex h-[420px] w-full items-center justify-center md:h-[500px] touch-none">
       <Canvas
         camera={{ position, fov }}
         dpr={[1, isMobile ? 1.5 : 2]}
@@ -514,6 +514,10 @@ function Band({
             onPointerOver={() => hover(true)}
             onPointerOut={() => hover(false)}
             onPointerUp={(e: ThreeEvent<PointerEvent>) => {
+              (e.target as Element).releasePointerCapture(e.pointerId);
+              drag(false);
+            }}
+              onPointerCancel={(e: ThreeEvent<PointerEvent>) => {
               (e.target as Element).releasePointerCapture(e.pointerId);
               drag(false);
             }}

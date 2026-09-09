@@ -19,7 +19,9 @@ export default function ProjectCard({
   // Untuk variant preview di Home, kita tampilkan lebih ringkas
   if (variant === "preview") {
     return (
-      <div className="group rounded-xl border border-text-on-dark-secondary bg-dark-base p-4 transition-all hover:border-accent-orange hover:scale-105">
+      <div onClick={onView}
+        className="group cursor-pointer rounded-xl border border-text-on-dark-secondary bg-dark-base p-4 transition-all hover:border-accent-orange hover:scale-105"
+        >
         {/* Thumbnail / Gambar Project */}
         <div className="relative mb-4 aspect-video w-full overflow-hidden rounded-lg bg-text-on-dark-secondary">
           {project.image ? (

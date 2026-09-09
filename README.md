@@ -21,5 +21,5 @@ npm run build
 - [X] Navbar & Footer
 - [X] Home page
 - [X] About page
-- [ ] Project page
+- [X] Project page
     

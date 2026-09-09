@@ -1,4 +1,5 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { projects } from "../../data/projects";
 import type { Project } from "../../types/project";
 import ProjectCard from "../common/ProjectCard";
@@ -8,6 +9,19 @@ import ProjectDetail from "./ProjectDetail";
 export default function ProjectGrid() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [searchParams] = useSearchParams();
+
+  useEffect(() => {
+    const projectId = searchParams.get("project");
+
+    if (!projectId) return;
+
+    const project = projects.find((item) => item.id === projectId);
+
+    if (project) {
+      setSelectedProject(project);
+    }
+  }, [searchParams]);
 
   const categories = useMemo(() => {
     return ["All", ...new Set(projects.map((project) => project.category))];

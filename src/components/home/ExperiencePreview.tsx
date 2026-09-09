@@ -1,8 +1,7 @@
-// src/components/ExperiencePreview.tsx
-
 import { useLanguage } from "../../context/LanguageContext";
 import { experiences } from "../../data/experiences";
 import { techFocuses } from "../../data/techFocus";
+import { Link } from "react-router-dom";
 
 function DotScale({ level }: { level: number }) {
   const dots = Array.from({ length: 5 }, (_, i) => i + 1);
@@ -52,7 +51,7 @@ export default function ExperiencePreview() {
                       <span className="text-base font-bold text-text-on-dark">
                         {exp.role}
                       </span>
-                      <span className="text-sm text-text-on-dark-secondary">
+                      <span className="text-sm text-accent-orange">
                         @ {exp.company}
                       </span>
                     </div>
@@ -65,12 +64,11 @@ export default function ExperiencePreview() {
             </div>
 
             <div className="mt-8">
-              <a
-                href="/about"
+              <Link to="/about#experience"
                 className="inline-block rounded-lg border border-accent-orange px-6 py-2 text-sm font-medium text-text-on-dark transition hover:bg-accent-orange"
               >
-                {t("experience.ctaViewFullCV")}
-              </a>
+                {t("experience.ctaViewMore")}
+              </Link>
             </div>
           </div>
 

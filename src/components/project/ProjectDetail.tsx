@@ -16,6 +16,7 @@ export default function ProjectDetail({
 
   const title = project.title[language];
   const description = project.description[language];
+  const paragraphs = description.split("\n\n");
 
   const images = project.images?.length
     ? project.images
@@ -128,9 +129,13 @@ export default function ProjectDetail({
         </div>
 
         {/* Description */}
-        <p className="mb-6 text-sm leading-relaxed text-text-on-warm-secondary md:text-base">
-          {description}
-        </p>
+        <div className="mb-6 text-sm text-justify leading-relaxed text-text-on-warm-secondary md:text-base">
+          {paragraphs.map((paragraph, index) => (
+            <p key={index} className="mb-2 last:mb-0">
+              {paragraph}
+            </p>
+          ))}
+        </div>
 
         {/* Project Link */}
         {project.link && (

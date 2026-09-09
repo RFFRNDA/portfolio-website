@@ -1,5 +1,6 @@
 import { useLanguage } from "../../context/LanguageContext";
 import { ArrowRight, UserRound, MapPin, Mail, Clock3 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function AboutMePreview() {
   const { t } = useLanguage();
@@ -22,10 +23,10 @@ export default function AboutMePreview() {
             <p className="mt-4 text-base leading-relaxed text-text-on-warm-secondary text-justify">
               {t("aboutPreview.description")}
             </p>
-            <a href="/about" className="mt-6 inline-flex items-center gap-2 whitespace-nowrap bg-dark-base rounded-lg text-sm font-medium text-text-on-dark transition-all hover:bg-dark-base/75 hover:scale-105 active:scale-95 px-6 py-2.5 sm:px-6 sm:py-3 sm:text-base">
+            <Link to="/about" className="mt-6 inline-flex items-center gap-2 whitespace-nowrap bg-dark-base rounded-lg text-sm font-medium text-text-on-dark transition-all hover:bg-dark-base/75 hover:scale-105 active:scale-95 px-6 py-2.5 sm:px-6 sm:py-3 sm:text-base">
               {t("aboutPreview.ctaMore")}
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </a>
+            </Link>
           </div>
 
           {/* Kolom Kanan - Bio & Signature */}

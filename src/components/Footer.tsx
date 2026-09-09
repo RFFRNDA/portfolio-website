@@ -24,7 +24,7 @@ function Footer() {
 					<Link to="/">
 						<img src="/images/rf-logo.png" alt="Rafif Logo" className="block h-auto w-16"/>
 					</Link>
-					<p className="mt-2 text-sm text-text-on-dark-secondary md:text-left">
+					<p className="mt-2 text-sm text-justify text-text-on-dark-secondary">
 						{t("hero.tagline")}
 					</p>
 					<SocialLinks className="mt-2" />
