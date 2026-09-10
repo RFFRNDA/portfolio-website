@@ -40,7 +40,7 @@ export default function Hero() {
                 {t("hero.ctaViewProjects")}
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
-              <a href="/CV-ATS-RafifFernanda.pdf" download className="inline-flex items-center gap-2 whitespace-nowrap rounded-lg border border-text-on-dark-secondary px-4 py-2.5 text-sm font-medium text-text-on-dark transition-all hover:border-text-on-dark hover:bg-text-on-dark/5 hover:scale-105 active:scale-95 sm:px-6 sm:py-3 sm:text-base">
+              <a href="/CV_ATS_RafifFernanda.pdf" download className="inline-flex items-center gap-2 whitespace-nowrap rounded-lg border border-text-on-dark-secondary px-4 py-2.5 text-sm font-medium text-text-on-dark transition-all hover:border-text-on-dark hover:bg-text-on-dark/5 hover:scale-105 active:scale-95 sm:px-6 sm:py-3 sm:text-base">
                 <Download className="h-4 w-4" />
                 Download CV
               </a>
