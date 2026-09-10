@@ -9,6 +9,9 @@ export const en = {
     badgeOpenToWork: "Open to Work",
     ctaViewProjects: "View My Project",
   },
+  cv: {
+    title: "View CV"
+  },
   profile: {
     name: "Name",
     locationTitle: "Location",

@@ -11,6 +11,9 @@ export const id: UIDictionary = {
     badgeOpenToWork: "Open to Work",
     ctaViewProjects: "Lihat Project Saya",
   },
+  cv: {
+    title: "Lihat CV"
+  },
   profile: {
     name: "Nama",
     locationTitle: "Lokasi",

@@ -1,5 +1,5 @@
 import { useLanguage } from "../../context/LanguageContext";
-import { Download } from "lucide-react";
+import { FileText } from "lucide-react";
 
 export default function AboutHeader() {
   const { t } = useLanguage();
@@ -31,9 +31,9 @@ export default function AboutHeader() {
             ))}
           </div>
           <div className="my-2 flex flex-nowrap gap-2 sm:gap-4">
-            <a href="/CV_ATS_RafifFernanda.pdf" download className="inline-flex items-center gap-2 whitespace-nowrap rounded-lg border border-text-on-dark-secondary px-4 py-2.5 text-sm font-medium text-text-on-dark transition-all hover:border-text-on-dark hover:bg-text-on-dark/5 hover:scale-105 active:scale-95 sm:px-6 sm:py-3 sm:text-base">
-              <Download className="h-4 w-4" />
-              Download CV
+            <a href="/CV_ATS_RafifFernanda.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 whitespace-nowrap rounded-lg border border-text-on-dark-secondary px-4 py-2.5 text-sm font-medium text-text-on-dark transition-all hover:border-text-on-dark hover:bg-text-on-dark/5 hover:scale-105 active:scale-95 sm:px-6 sm:py-3 sm:text-base">
+              <FileText className="h-4 w-4" />
+              {t("cv.title")}
             </a>
           </div>
         </div>
