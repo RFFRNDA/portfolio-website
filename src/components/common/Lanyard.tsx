@@ -19,7 +19,8 @@ import * as THREE from 'three';
 import cardGLB from '../../assets/lanyard/card.glb';
 import lanyard from '../../assets/lanyard/lanyard.png';
 
-extend({ MeshLineGeometry, MeshLineMaterial });
+// Agar bisa jadi elemen JSX
+extend({ MeshLineGeometry, MeshLineMaterial }); 
 
 declare module '@react-three/fiber' {
   interface ThreeElements {
