@@ -17,7 +17,7 @@ export const en = {
     locationTitle: "Location",
     locationValue: "Probolinggo, East Java, Indonesia",
     availabilityTitle: "Availability",
-    availabilityValue: "Available for freelance work and full-time opportunities",
+    availabilityValue: "Available for freelance work or full-time opportunities",
     educationTitle: "Education",
     educationHead: "Jember University",
     educationValue: "Bachelor of Informatics\n\nGPA 3.75 / 4.00 - Excellent\n\nGraduated January 2026",

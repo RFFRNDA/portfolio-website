@@ -55,7 +55,7 @@ export const projects: Project[] = [
       "/images/projects/ml-comvis/endView.webp",
       "/images/projects/ml-comvis/conclusion.jpg",
     ],
-    link: "",
+    link: "https://github.com/RFFRNDA/coffee-fruit-segmentation-demo",
   },
   {
     id: "smart-canteen",
@@ -82,7 +82,7 @@ export const projects: Project[] = [
       "/images/projects/smart-canteen/orderCheck.webp",
       "/images/projects/smart-canteen/tenant.webp",
     ],
-    link: "",
+    link: "https://github.com/ferrariromano/Kantincerdas-Fasilkom",
   },
   {
     id: "business-collab-system",
@@ -120,6 +120,6 @@ export const projects: Project[] = [
       id: "Sistem pemesanan Food & Beverage yang dibuat untuk memberdayakan UMKM lokal, dengan alur pemesanan pelanggan (pesan, bayar, lacak pesanan) serta dashboard penjual untuk manajemen menu dan laporan penjualan.",
     },
     image: "/images/projects/uiuxGits.png",
-    link: "",
+    link: "https://github.com/RFFRNDA/capstoneproject",
   },
 ];
